@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>5.5. La capa de sesión | Tema 2 PAR </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Diana de Lara del Rey" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-16"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Tema 2 PAR</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Tema 2. Teoría de las comunicaciones. El modelo OSI. TCP/IP</a></li>
+   <li><a href="1_introduccin.html" class="no-ch">1. Introducción</a></li>
+   <li><a href="2_protocolos_de_comunicacin.html" class="daddy">2. Protocolos de Comunicación</a>
+   <ul class="other-section">
+      <li><a href="21_por_qu_importan_los_protocolos.html" class="no-ch">2.1. ¿Por Qué Importan los Protocolos?</a></li>
+      <li><a href="22_protocolos_de_red.html" class="no-ch">2.2. Protocolos de Red</a></li>
+   </ul>
+   </li>
+   <li><a href="3_funciones_de_la_comunicacin.html" class="no-ch">3. Funciones de la Comunicación</a></li>
+   <li><a href="4_arquitectura_de_comunicaciones.html" class="daddy">4. Arquitectura de Comunicaciones</a>
+   <ul class="other-section">
+      <li><a href="41_diseo_de_arquitectura_de_red.html" class="no-ch">4.1. Diseño de Arquitectura de Red</a></li>
+      <li><a href="42_caractersticas_de_las_arquitecturas_por_niveles.html" class="no-ch">4.2. Características de las Arquitecturas por Niveles</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="5_el_modelo_de_referencia_osi.html" class="current-page-parent daddy">5. El modelo de referencia OSI</a>
+   <ul>
+      <li><a href="51_la_capa_fsica.html" class="no-ch">5.1. La capa física</a></li>
+      <li><a href="52_la_capa_de_enlace_de_datos.html" class="no-ch">5.2. La capa de enlace de Datos</a></li>
+      <li><a href="53_la_capa_de_red.html" class="no-ch">5.3. La capa de red</a></li>
+      <li><a href="54_la_capa_de_transporte.html" class="no-ch">5.4. La capa de transporte</a></li>
+      <li id="active"><a href="55_la_capa_de_sesin.html" class="active no-ch">5.5. La capa de sesión</a></li>
+      <li><a href="56_la_capa_de_presentacin.html" class="no-ch">5.6. La capa de presentación</a></li>
+      <li><a href="57_la_capa_de_aplicacin.html" class="no-ch">5.7. La capa de aplicación</a></li>
+   </ul>
+   </li>
+   <li><a href="6_el_modelo_tcpip.html" class="daddy">6. El Modelo TCP/IP</a>
+   <ul class="other-section">
+      <li><a href="61_la_capa_de_acceso_a_red.html" class="daddy">6.1. La capa de acceso a red</a>
+      <ul class="other-section">
+         <li><a href="611_formato_de_tramas.html" class="no-ch">6.1.1. Formato de tramas</a></li>
+         <li><a href="612_direccin_mac.html" class="no-ch">6.1.2. Dirección MAC</a></li>
+      </ul>
+      </li>
+      <li><a href="62_la_capa_de_red_o_internet.html" class="daddy">6.2. La capa de red o Internet</a>
+      <ul class="other-section">
+         <li><a href="621_protocolo_ip.html" class="daddy">6.2.1. Protocolo IP</a>
+         <ul class="other-section">
+            <li><a href="6211_subredes.html" class="no-ch">6.2.1.1. Subredes</a></li>
+            <li><a href="6212_tabla_de_encaminamiento.html" class="no-ch">6.2.1.2. Tabla de encaminamiento</a></li>
+         </ul>
+         </li>
+         <li><a href="622_protocolo_arp.html" class="no-ch">6.2.2. Protocolo ARP</a></li>
+         <li><a href="623_protocolo_icmp.html" class="no-ch">6.2.3. Protocolo ICMP</a></li>
+      </ul>
+      </li>
+      <li><a href="63_la_capa_de_transporte.html" class="daddy">6.3. La capa de transporte</a>
+      <ul class="other-section">
+         <li><a href="631_protocolo_tcp.html" class="daddy">6.3.1. Protocolo TCP</a>
+         <ul class="other-section">
+            <li><a href="6311_formato_de_cabecera.html" class="no-ch">6.3.1.1. Formato de cabecera</a></li>
+            <li><a href="6312_puerto_lgico.html" class="no-ch">6.3.1.2. Puerto lógico</a></li>
+         </ul>
+         </li>
+         <li><a href="632_protocolo_udp.html" class="daddy">6.3.2. Protocolo UDP</a>
+         <ul class="other-section">
+            <li><a href="6321_formato_de_cabecera.html" class="no-ch">6.3.2.1. Formato de cabecera</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+      <li><a href="64_la_capa_de_aplicacin.html" class="no-ch">6.4. La capa de aplicación</a></li>
+   </ul>
+   </li>
+   <li><a href="7_comparacin_entre_el_modelo_osi_y_el_modelo_tcpip.html" class="no-ch">7. Comparación entre el Modelo OSI y el Modelo TCP/IP</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="54_la_capa_de_transporte.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="56_la_capa_de_presentacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">5.5. La capa de sesión</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id45">
+<div class="iDevice emphasis0" >
+<div id="ta45_120_2" class="block iDevice_content">
+<div class="exe-text"><p>La <strong>Capa</strong> <strong>de</strong> <strong>Sesión</strong> es la quinta capa del modelo OSI (Open Systems Interconnection) y actúa como un mediador que gestiona las <strong>sesiones de comunicación</strong> entre aplicaciones que se ejecutan en diferentes dispositivos de red. Su principal propósito es establecer, mantener y finalizar estas sesiones, permitiendo una <strong>comunicación organizada y sincronizada</strong> entre los sistemas finales.</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id46">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Funciones de la Capa de Sesión</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta46_121_2" class="block iDevice_content">
+<div class="exe-text"><p> <br />Establecimiento de la Sesión:</p>
+<p>La Capa de Sesión se encarga de negociar y establecer una sesión entre dos sistemas de red que desean comunicarse. Una sesión puede ser pensada como una conexión lógica que asegura que los datos se transfieren en un orden específico y sin interferencias.<br />Utiliza protocolos de control de sesión que acuerdan los parámetros necesarios para la comunicación (por ejemplo, autenticación, tiempo de espera, sincronización).<br />Gestión y Control de la Sesión:</p>
+<p>Una vez establecida la sesión, la Capa de Sesión se encarga de gestionar y mantener la sesión activa durante el intercambio de datos. Esta gestión incluye la sincronización de los datos y el control del flujo de información para asegurar que ambas partes puedan comunicarse de manera efectiva.<br />Implementa puntos de sincronización para permitir que una comunicación interrumpida pueda reanudarse desde un punto seguro conocido, en lugar de comenzar desde el principio.<br />Sincronización:</p>
+<p>La Capa de Sesión utiliza puntos de sincronización (a veces denominados "checkpoints") para dividir largas transmisiones de datos en segmentos más pequeños que se puedan gestionar y verificar más fácilmente. Esto permite la recuperación en caso de fallo. Si una sesión se interrumpe o falla, la comunicación puede reanudarse desde el último punto de sincronización, evitando la retransmisión de toda la información.<br />Control de Diálogo:</p>
+<p>Gestiona el diálogo entre dos sistemas de comunicación, asegurando que ambos dispositivos puedan enviar y recibir datos sin interferencias. El control de diálogo puede ser full-duplex (permitiendo la comunicación bidireccional simultánea) o half-duplex (permitiendo la comunicación bidireccional, pero no simultánea).<br />Terminación de la Sesión:</p>
+<p>Cuando la comunicación ha finalizado, la Capa de Sesión asegura una finalización ordenada de la sesión para liberar los recursos del sistema y mantener la estabilidad de la red. Este proceso puede implicar el envío de señales de terminación, confirmación de recibo de todos los datos, y el cierre de las conexiones establecidas.<br />Gestión de la Seguridad de la Sesión:</p>
+<p>Algunos protocolos de la Capa de Sesión también incorporan funciones básicas de autenticación y autorización para asegurar que las entidades involucradas en la comunicación son quienes dicen ser, y que tienen permiso para acceder a los recursos solicitados.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id47">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Protocolos de la Capa de Sesión</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta47_122_2" class="block iDevice_content">
+<div class="exe-text"><p>A diferencia de otras capas del modelo OSI, la Capa de Sesión no tiene un conjunto de protocolos tan universalmente aceptado. Sin embargo, hay algunos protocolos y servicios que operan en esta capa o están estrechamente asociados con sus funciones:</p>
+<p>NetBIOS (Network Basic Input/Output System):</p>
+<p>Es un protocolo que permite que las aplicaciones de diferentes computadoras dentro de la misma red local se comuniquen entre sí. NetBIOS establece sesiones y las mantiene, proporcionando servicios de sesión para aplicaciones de red.<br />RPC (Remote Procedure Call):</p>
+<p>Es un protocolo que permite a un programa ejecutar procedimientos en otro dispositivo de red de manera transparente. RPC depende de la Capa de Sesión para establecer y gestionar las comunicaciones entre aplicaciones.<br />PPTP (Point-to-Point Tunneling Protocol):</p>
+<p>Aunque PPTP se asocia principalmente con la creación de redes privadas virtuales (VPNs), también puede considerarse como un protocolo de la Capa de Sesión, ya que establece y mantiene sesiones seguras.<br />SAP (Session Announcement Protocol):</p>
+<p>Se utiliza para anunciar sesiones multimedia y sus metadatos asociados en una red IP. SAP es relevante en aplicaciones de multicast y puede considerarse un protocolo de la Capa de Sesión.<br />SOCKS (Socket Secure):</p>
+<p>Aunque SOCKS se implementa en la capa de aplicación, puede considerarse también en la Capa de Sesión, ya que gestiona la comunicación de sesión entre clientes y servidores a través de un proxy.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id48">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Importancia de la Capa de Sesión en Redes Modernas</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta48_123_2" class="block iDevice_content">
+<div class="exe-text"><p>Aunque la Capa de Sesión es fundamental en el modelo OSI, muchas de sus funciones han sido absorbidas o implementadas de manera diferente en el modelo TCP/IP (donde las funciones de sesión se suelen manejar a nivel de aplicación). Aun así, entender las funciones de la Capa de Sesión es esencial para diseñar aplicaciones robustas que necesiten mantener una comunicación coherente y gestionada.<br />La sincronización, gestión de diálogos y control de sesiones son especialmente relevantes en aplicaciones de red donde es vital mantener un estado constante y asegurado entre múltiples comunicaciones, como en bases de datos distribuidas, sistemas de mensajería, servicios de transmisión multimedia, y sistemas de videoconferencia.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id49">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Ejemplos de Uso de la Capa de Sesión en la Vida Real</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta49_124_2" class="block iDevice_content">
+<div class="exe-text"><p>Videoconferencias:</p>
+<p>En una videoconferencia, la Capa de Sesión se encarga de mantener la conexión activa entre los participantes, gestionar la sincronización de los flujos de video y audio, y manejar las reconexiones en caso de caída de la red.<br />Aplicaciones de Transferencia de Archivos:</p>
+<p>Protocolos como FTP pueden depender de las funciones de la Capa de Sesión para asegurarse de que la transferencia de archivos se realiza correctamente, recuperando datos desde el último punto de sincronización en caso de interrupciones.<br />Servicios de Streaming de Video y Audio:</p>
+<p>Para ofrecer una experiencia de streaming sin interrupciones, las funciones de la Capa de Sesión permiten mantener las sesiones de comunicación abiertas, gestionando las pausas y las continuaciones en los flujos de datos.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id50">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Desafíos en la Implementación de la Capa de Sesión</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta50_125_2" class="block iDevice_content">
+<div class="exe-text"><p>Manejo de Fallos: Asegurar la recuperación adecuada de las sesiones interrumpidas puede ser complejo, especialmente cuando hay múltiples participantes o cuando las sesiones dependen de varios puntos de sincronización.<br />Control de Seguridad: Garantizar que las sesiones sean seguras y que solo las entidades autorizadas puedan establecer o reanudar sesiones es fundamental para la seguridad de la red.<br />Compatibilidad entre Protocolos: Algunos protocolos de la Capa de Sesión deben ser compatibles con protocolos en capas superiores e inferiores, lo que puede complicar su implementación y optimización.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id51">
+<div class="iDevice emphasis0" >
+<div id="ta51_126_2" class="block iDevice_content">
+<div class="exe-text"><p>La Capa de Sesión del modelo OSI proporciona funciones cruciales para gestionar, mantener y finalizar las sesiones de comunicación entre aplicaciones. Aunque algunas de sus funciones han sido absorbidas por otras capas en modelos más modernos, sigue siendo esencial en la conceptualización del modelo OSI y en la comprensión de cómo se deben manejar las sesiones de comunicación en redes distribuidas y sistemas complejos.</p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="54_la_capa_de_transporte.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="56_la_capa_de_presentacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_adultos_js.js"></script></body></html>

@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>5. El modelo de referencia OSI | Tema 2 PAR </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Diana de Lara del Rey" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-6"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Tema 2 PAR</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Tema 2. Teoría de las comunicaciones. El modelo OSI. TCP/IP</a></li>
+   <li><a href="1_introduccin.html" class="no-ch">1. Introducción</a></li>
+   <li><a href="2_protocolos_de_comunicacin.html" class="daddy">2. Protocolos de Comunicación</a>
+   <ul class="other-section">
+      <li><a href="21_por_qu_importan_los_protocolos.html" class="no-ch">2.1. ¿Por Qué Importan los Protocolos?</a></li>
+      <li><a href="22_protocolos_de_red.html" class="no-ch">2.2. Protocolos de Red</a></li>
+   </ul>
+   </li>
+   <li><a href="3_funciones_de_la_comunicacin.html" class="no-ch">3. Funciones de la Comunicación</a></li>
+   <li><a href="4_arquitectura_de_comunicaciones.html" class="daddy">4. Arquitectura de Comunicaciones</a>
+   <ul class="other-section">
+      <li><a href="41_diseo_de_arquitectura_de_red.html" class="no-ch">4.1. Diseño de Arquitectura de Red</a></li>
+      <li><a href="42_caractersticas_de_las_arquitecturas_por_niveles.html" class="no-ch">4.2. Características de las Arquitecturas por Niveles</a></li>
+   </ul>
+   </li>
+   <li id="active"><a href="5_el_modelo_de_referencia_osi.html" class="active daddy">5. El modelo de referencia OSI</a>
+   <ul>
+      <li><a href="51_la_capa_fsica.html" class="no-ch">5.1. La capa física</a></li>
+      <li><a href="52_la_capa_de_enlace_de_datos.html" class="no-ch">5.2. La capa de enlace de Datos</a></li>
+      <li><a href="53_la_capa_de_red.html" class="no-ch">5.3. La capa de red</a></li>
+      <li><a href="54_la_capa_de_transporte.html" class="no-ch">5.4. La capa de transporte</a></li>
+      <li><a href="55_la_capa_de_sesin.html" class="no-ch">5.5. La capa de sesión</a></li>
+      <li><a href="56_la_capa_de_presentacin.html" class="no-ch">5.6. La capa de presentación</a></li>
+      <li><a href="57_la_capa_de_aplicacin.html" class="no-ch">5.7. La capa de aplicación</a></li>
+   </ul>
+   </li>
+   <li><a href="6_el_modelo_tcpip.html" class="daddy">6. El Modelo TCP/IP</a>
+   <ul class="other-section">
+      <li><a href="61_la_capa_de_acceso_a_red.html" class="daddy">6.1. La capa de acceso a red</a>
+      <ul class="other-section">
+         <li><a href="611_formato_de_tramas.html" class="no-ch">6.1.1. Formato de tramas</a></li>
+         <li><a href="612_direccin_mac.html" class="no-ch">6.1.2. Dirección MAC</a></li>
+      </ul>
+      </li>
+      <li><a href="62_la_capa_de_red_o_internet.html" class="daddy">6.2. La capa de red o Internet</a>
+      <ul class="other-section">
+         <li><a href="621_protocolo_ip.html" class="daddy">6.2.1. Protocolo IP</a>
+         <ul class="other-section">
+            <li><a href="6211_subredes.html" class="no-ch">6.2.1.1. Subredes</a></li>
+            <li><a href="6212_tabla_de_encaminamiento.html" class="no-ch">6.2.1.2. Tabla de encaminamiento</a></li>
+         </ul>
+         </li>
+         <li><a href="622_protocolo_arp.html" class="no-ch">6.2.2. Protocolo ARP</a></li>
+         <li><a href="623_protocolo_icmp.html" class="no-ch">6.2.3. Protocolo ICMP</a></li>
+      </ul>
+      </li>
+      <li><a href="63_la_capa_de_transporte.html" class="daddy">6.3. La capa de transporte</a>
+      <ul class="other-section">
+         <li><a href="631_protocolo_tcp.html" class="daddy">6.3.1. Protocolo TCP</a>
+         <ul class="other-section">
+            <li><a href="6311_formato_de_cabecera.html" class="no-ch">6.3.1.1. Formato de cabecera</a></li>
+            <li><a href="6312_puerto_lgico.html" class="no-ch">6.3.1.2. Puerto lógico</a></li>
+         </ul>
+         </li>
+         <li><a href="632_protocolo_udp.html" class="daddy">6.3.2. Protocolo UDP</a>
+         <ul class="other-section">
+            <li><a href="6321_formato_de_cabecera.html" class="no-ch">6.3.2.1. Formato de cabecera</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+      <li><a href="64_la_capa_de_aplicacin.html" class="no-ch">6.4. La capa de aplicación</a></li>
+   </ul>
+   </li>
+   <li><a href="7_comparacin_entre_el_modelo_osi_y_el_modelo_tcpip.html" class="no-ch">7. Comparación entre el Modelo OSI y el Modelo TCP/IP</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="42_caractersticas_de_las_arquitecturas_por_niveles.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="51_la_capa_fsica.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">5. El modelo de referencia OSI</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id8">
+<div class="iDevice emphasis0" >
+<div id="ta8_128_2" class="block iDevice_content">
+<div class="exe-text"><p>El Modelo OSI (Interconexión de Sistemas Abiertos) es un marco conceptual que estandariza las funciones de una red de telecomunicaciones o de computadoras en siete capas distintas. Fue desarrollado por la ISO (International Organization for Standardization) en 1984 para facilitar la interoperabilidad entre diferentes sistemas de redes y asegurar que los dispositivos de diferentes fabricantes puedan comunicarse de manera efectiva.</p>
+<p>El modelo OSI sirve como guía de referencia para entender y diseñar sistemas de comunicación y establecer protocolos de red. Cada capa en el modelo OSI tiene una función específica y se comunica solo con la capa inmediatamente superior e inferior. Esta división en capas ayuda a aislar las funciones y permite el desarrollo modular y la solución de problemas en las redes.</p>
+<p>Los principios teóricos en los que se basaron para la realización de OSI podemos resumirlos en los siguientes:</p>
+<ul>
+<li>Cada capa de la arquitectura está pensada para realizar una función bien definida.</li>
+<li>El número de niveles debe ser suficiente para que no se agrupen funciones distintas, pero no tan grande que haga la arquitectura inmanejable.</li>
+<li>Debe crearse una nueva capa siempre que se necesite realizar una función bien diferenciada del resto.</li>
+<li>Las divisiones en las capas deben establecerse de forma que se minimice el flujo de información entre ellas, es decir, que la interfaz sea más sencilla.</li>
+</ul>
+<p>Hay dos tipos básicos de modelos para describir las funciones que deben estar presentes para que las comunicaciones de red sean exitosas: modelos de protocolo y modelos de referencia.</p>
+<ul>
+<li><strong>Modelo de Protocolo: </strong>Este modelo coincide estrechamente con la estructura de un conjunto de protocolos en particular. Una suite de protocolos incluye el conjunto de protocolos relacionados que generalmente proporcionan toda la funcionalidad requerida para que las personas se comuniquen con la red de datos. El modelo TCP/IP es un modelo de protocolos porque describe las funciones que ocurren en cada capa de protocolos dentro de una suite de TCP/IP.</li>
+<li><strong>Modelo de Referencia:</strong> Este tipo de modelo describe las funciones que se deben completar en una capa en particular, pero no especifica exactamente cómo se debe realizar una función. Un modelo de referencia no pretende ofrecer un nivel de detalle suficiente para definir en forma precisa la manera en la que cada protocolo debería funcionar en cada capa. El objetivo principal de un modelo de referencia es ayudar a comprender mejor las funciones y los procesos necesarios para las comunicaciones de red. El modelo de referencia de redes más conocido fue creado por el proyecto I<strong>nterconexión de Sistemas Abiertos (Open Systems Interconnection -OSI)</strong> en la Organización Internacional de Estandarización (ISO). Se usa para diseño de redes de datos, especificaciones de funcionamiento y resolución de problemas. Este modelo se conoce comúnmente como el modelo OSI.</li>
+</ul>
+<p><img src="image-43.png" width="546" height="620" alt="OSI" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>Este modelo de vinculación de sistemas presenta diferentes niveles que se encuentran relacionados entre sí, se estandariza la comunicación a fin de poder lograr, a través de diferentes niveles, el intercambio de información.</p>
+<p>Cada uno de sus niveles tiene una función específica, solucionando el problema de la incompatibilidad que existía en diferentes redes. Las capas: son niveles dentro de una estructura de red, y cada uno de los niveles tiene una función que debe cumplirse de manera concatenada. Este modelo de comunicación permitía lograr que toda forma de enviar información a través de un dispositivo hacia Internet y viceversa tuviese un camino bien estructurado y fácil de comprender, a fin de que en cuestión de segundos lograra el resultado esperado. Ese camino se reflejaba en una estructura de 7 tipos de capas, teniendo en cuenta que se comienza desde la séptima hasta la primera:</p>
+<table style="width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 23.8646%; text-align: center;"><strong><span style="font-size: 18pt;">Capas del Modelo OSI</span></strong></td>
+<td style="width: 76.1354%; text-align: center;"><strong><span style="font-size: 18pt;">Descripción</span></strong></td>
+</tr>
+<tr>
+<td style="width: 23.8646%;"><em><strong>7. Aplicación</strong></em></td>
+<td style="width: 76.1354%;">Contiene protocolos utilizados para comunicaciones proceso a proceso. Se encuentra en proximidad con el usuario y le brinda aplicaciones que se encuentran fuera del modelo.</td>
+</tr>
+<tr>
+<td style="width: 23.8646%;"><em><strong>6. Presentación</strong></em></td>
+<td style="width: 76.1354%;">Proporciona una representación común de los datos transferidos entre los servicios de la capa de aplicación. Permite asegurar que la información que fue transferida pueda ser leída en el nivel de aplicación. la información viaja en varios lenguajes, con lo cual esta capa ayuda a universalizarlo con el objeto de que el destinatario final pueda leer y entender de qué se trata.</td>
+</tr>
+<tr>
+<td style="width: 23.8646%;"><em><strong>5. Sesión</strong></em></td>
+<td style="width: 76.1354%;">Proporciona servicios a la capa de presentación para organizar su diálogo y administrar el intercambio de datos. Administra el proceso desde que se establece una sesión hasta que finaliza entre dos hosts.</td>
+</tr>
+<tr>
+<td style="width: 23.8646%;"><em><strong>4. Transporte</strong></em></td>
+<td style="width: 76.1354%;">Define los servicios para segmentar, transferir y reensamblar los datos para las comunicaciones individuales entre terminales. Proporciona conectividad, direccionamiento y enrutamiento. A su vez gestiona las conexiones a través de la red para las capas superiores.</td>
+</tr>
+<tr>
+<td style="width: 23.8646%;"><em><strong>3. Red</strong></em></td>
+<td style="width: 76.1354%;">Proporciona servicios para intercambiar los datos individuales en la red entre terminales identificados. Proporciona conectividad, direccionamiento y enrutamiento. A su vez gestiona las conexiones a través de la red para las capas superiores.</td>
+</tr>
+<tr>
+<td style="width: 23.8646%;"><em><strong>2. Enlace de Datos</strong></em></td>
+<td style="width: 76.1354%;">Describen los métodos para intercambiar tramas de datos entre dispositivos en un medio común. Consiste en brindar los medios de tránsito confiables de datos en un enlace físico. Por lo tanto, la presente capa se encargará de direccionar los datos y el control de flujo.</td>
+</tr>
+<tr>
+<td style="width: 23.8646%;"><em><strong>1. Física</strong></em></td>
+<td style="width: 76.1354%;">Describen los medios mecánicos, eléctricos, funcionales y de procedimiento para activar, mantener y desactivar conexiones físicas para una transmisión de bits hacia y desde un dispositivo de red. Se consideran los aspectos mecánicos, eléctricos y los medios de transmisión; por ejemplo: cables, tipologías, calidad, conectores, etcétera. Lo importante es que define el vínculo existente entre un dispositivo y un medio de transmisión.</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p><img src="image-33.png" width="710" height="722" alt="Modelo OSI en capas" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p></p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="42_caractersticas_de_las_arquitecturas_por_niveles.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="51_la_capa_fsica.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_adultos_js.js"></script></body></html>

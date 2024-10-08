@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>5.6. La capa de presentación | Tema 2 PAR </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Diana de Lara del Rey" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-17"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Tema 2 PAR</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Tema 2. Teoría de las comunicaciones. El modelo OSI. TCP/IP</a></li>
+   <li><a href="1_introduccin.html" class="no-ch">1. Introducción</a></li>
+   <li><a href="2_protocolos_de_comunicacin.html" class="daddy">2. Protocolos de Comunicación</a>
+   <ul class="other-section">
+      <li><a href="21_por_qu_importan_los_protocolos.html" class="no-ch">2.1. ¿Por Qué Importan los Protocolos?</a></li>
+      <li><a href="22_protocolos_de_red.html" class="no-ch">2.2. Protocolos de Red</a></li>
+   </ul>
+   </li>
+   <li><a href="3_funciones_de_la_comunicacin.html" class="no-ch">3. Funciones de la Comunicación</a></li>
+   <li><a href="4_arquitectura_de_comunicaciones.html" class="daddy">4. Arquitectura de Comunicaciones</a>
+   <ul class="other-section">
+      <li><a href="41_diseo_de_arquitectura_de_red.html" class="no-ch">4.1. Diseño de Arquitectura de Red</a></li>
+      <li><a href="42_caractersticas_de_las_arquitecturas_por_niveles.html" class="no-ch">4.2. Características de las Arquitecturas por Niveles</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="5_el_modelo_de_referencia_osi.html" class="current-page-parent daddy">5. El modelo de referencia OSI</a>
+   <ul>
+      <li><a href="51_la_capa_fsica.html" class="no-ch">5.1. La capa física</a></li>
+      <li><a href="52_la_capa_de_enlace_de_datos.html" class="no-ch">5.2. La capa de enlace de Datos</a></li>
+      <li><a href="53_la_capa_de_red.html" class="no-ch">5.3. La capa de red</a></li>
+      <li><a href="54_la_capa_de_transporte.html" class="no-ch">5.4. La capa de transporte</a></li>
+      <li><a href="55_la_capa_de_sesin.html" class="no-ch">5.5. La capa de sesión</a></li>
+      <li id="active"><a href="56_la_capa_de_presentacin.html" class="active no-ch">5.6. La capa de presentación</a></li>
+      <li><a href="57_la_capa_de_aplicacin.html" class="no-ch">5.7. La capa de aplicación</a></li>
+   </ul>
+   </li>
+   <li><a href="6_el_modelo_tcpip.html" class="daddy">6. El Modelo TCP/IP</a>
+   <ul class="other-section">
+      <li><a href="61_la_capa_de_acceso_a_red.html" class="daddy">6.1. La capa de acceso a red</a>
+      <ul class="other-section">
+         <li><a href="611_formato_de_tramas.html" class="no-ch">6.1.1. Formato de tramas</a></li>
+         <li><a href="612_direccin_mac.html" class="no-ch">6.1.2. Dirección MAC</a></li>
+      </ul>
+      </li>
+      <li><a href="62_la_capa_de_red_o_internet.html" class="daddy">6.2. La capa de red o Internet</a>
+      <ul class="other-section">
+         <li><a href="621_protocolo_ip.html" class="daddy">6.2.1. Protocolo IP</a>
+         <ul class="other-section">
+            <li><a href="6211_subredes.html" class="no-ch">6.2.1.1. Subredes</a></li>
+            <li><a href="6212_tabla_de_encaminamiento.html" class="no-ch">6.2.1.2. Tabla de encaminamiento</a></li>
+         </ul>
+         </li>
+         <li><a href="622_protocolo_arp.html" class="no-ch">6.2.2. Protocolo ARP</a></li>
+         <li><a href="623_protocolo_icmp.html" class="no-ch">6.2.3. Protocolo ICMP</a></li>
+      </ul>
+      </li>
+      <li><a href="63_la_capa_de_transporte.html" class="daddy">6.3. La capa de transporte</a>
+      <ul class="other-section">
+         <li><a href="631_protocolo_tcp.html" class="daddy">6.3.1. Protocolo TCP</a>
+         <ul class="other-section">
+            <li><a href="6311_formato_de_cabecera.html" class="no-ch">6.3.1.1. Formato de cabecera</a></li>
+            <li><a href="6312_puerto_lgico.html" class="no-ch">6.3.1.2. Puerto lógico</a></li>
+         </ul>
+         </li>
+         <li><a href="632_protocolo_udp.html" class="daddy">6.3.2. Protocolo UDP</a>
+         <ul class="other-section">
+            <li><a href="6321_formato_de_cabecera.html" class="no-ch">6.3.2.1. Formato de cabecera</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+      <li><a href="64_la_capa_de_aplicacin.html" class="no-ch">6.4. La capa de aplicación</a></li>
+   </ul>
+   </li>
+   <li><a href="7_comparacin_entre_el_modelo_osi_y_el_modelo_tcpip.html" class="no-ch">7. Comparación entre el Modelo OSI y el Modelo TCP/IP</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="55_la_capa_de_sesin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="57_la_capa_de_aplicacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">5.6. La capa de presentación</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id52">
+<div class="iDevice emphasis0" >
+<div id="ta52_127_2" class="block iDevice_content">
+<div class="exe-text"><p>La Capa de Presentación es la sexta capa del modelo OSI (Open Systems Interconnection) y su función principal es formatear, codificar, traducir y cifrar los datos que se envían desde la capa de aplicación al destino. Es conocida como la "traductora" del modelo OSI, ya que asegura que los datos transmitidos desde un dispositivo sean comprensibles y procesables por otro dispositivo que pueda tener un entorno diferente.</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id53">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Funciones de la Capa de Presentación</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta53_128_2" class="block iDevice_content">
+<div class="exe-text"><p>Traducción de Datos:</p>
+<p>La Capa de Presentación se encarga de la traducción de los datos entre el formato utilizado por la capa de aplicación y el formato necesario para la transmisión de la información. Por ejemplo, si un sistema está utilizando ASCII y otro sistema está utilizando EBCDIC, la Capa de Presentación convierte los datos de uno a otro para garantizar que ambos sistemas puedan entender los datos enviados y recibidos.<br />Los datos también se pueden traducir entre diferentes formatos de archivo (por ejemplo, conversión de archivos de texto a binario o de un formato gráfico a otro).<br />Compresión de Datos:</p>
+<p>Para reducir el tamaño de los datos y acelerar la transmisión, la Capa de Presentación puede aplicar algoritmos de compresión. Esto es especialmente útil en aplicaciones que requieren transferencias de gran volumen de datos, como streaming de video y audio, y copias de seguridad de datos.<br />Ejemplos de algoritmos de compresión utilizados incluyen Lempel-Ziv-Welch (LZW), Deflate, y JPEG (para imágenes).<br />Cifrado y Desencriptación de Datos:</p>
+<p>La seguridad es una de las principales preocupaciones en las redes. La Capa de Presentación es responsable de la encriptación de datos antes de su transmisión y de su desencriptación una vez recibidos en el destino. Esto asegura que los datos se mantengan confidenciales durante la transmisión y que solo los sistemas autorizados puedan acceder a ellos.<br />Algunos de los protocolos de cifrado comunes incluyen TLS (Transport Layer Security) y SSL (Secure Sockets Layer).<br />Serialización y Deserialización de Datos:</p>
+<p>La serialización es el proceso de convertir una estructura de datos o un objeto en un formato que pueda almacenarse o transmitirse y reconstruirse posteriormente. La deserialización es el proceso inverso. La Capa de Presentación se encarga de convertir los datos en una serie de bytes que puedan ser enviados a través de la red y luego reconstruirlos en su forma original.<br />Ejemplos incluyen el uso de XML, JSON, y Protocol Buffers.<br />Gestión de Formato de Datos:</p>
+<p>La Capa de Presentación también puede gestionar el formato de los datos para su presentación en la capa de aplicación. Esto incluye la conversión de datos de un formato visual a otro, como convertir un archivo de imagen BMP a JPEG o PNG.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id54">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Protocolos y Estándares Asociados a la Capa de Presentación</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta54_129_2" class="block iDevice_content">
+<div class="exe-text"><p>TLS (Transport Layer Security) y SSL (Secure Sockets Layer):</p>
+<p>TLS y SSL son protocolos que aseguran la transmisión de datos a través de la red mediante cifrado. Aunque se implementan en la Capa de Transporte, las funciones de cifrado y desencriptación pertenecen a la Capa de Presentación. Estos protocolos aseguran que los datos transmitidos entre el cliente y el servidor sean seguros.<br />JPEG, PNG, GIF (Formatos de Imágenes):</p>
+<p>Estos son formatos de imágenes que utilizan diferentes algoritmos de compresión y codificación para reducir el tamaño de los archivos sin perder (o con mínima pérdida) de calidad.<br />MIME (Multipurpose Internet Mail Extensions):</p>
+<p>MIME es un estándar que extiende el formato de los correos electrónicos para soportar texto en diferentes codificaciones de caracteres, así como archivos adjuntos como imágenes, audio, video, y documentos de aplicación.<br />ASCII (American Standard Code for Information Interchange) y EBCDIC (Extended Binary Coded Decimal Interchange Code):</p>
+<p>Son códigos de caracteres utilizados para la representación de texto. ASCII es más común en sistemas modernos, mientras que EBCDIC se utilizaba más en sistemas antiguos como los mainframes de IBM. La Capa de Presentación permite la conversión entre estos formatos cuando es necesario.<br />XML (eXtensible Markup Language) y JSON (JavaScript Object Notation):</p>
+<p>XML y JSON son formatos de datos utilizados para el intercambio de datos estructurados en la web. La Capa de Presentación se ocupa de la serialización y deserialización de datos en estos formatos.<br />XDR (External Data Representation):</p>
+<p>Es un estándar que proporciona una forma común de representar datos estructurados independientemente de la arquitectura del sistema. XDR es utilizado por ONC RPC (Open Network Computing Remote Procedure Call) para permitir la interoperabilidad entre diferentes sistemas.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id55">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Ejemplos de Uso de la Capa de Presentación en la Vida Real</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta55_130_2" class="block iDevice_content">
+<div class="exe-text"><p>Transmisión de Video y Audio:</p>
+<p>Aplicaciones de transmisión de video y audio, como Netflix o Spotify, utilizan la Capa de Presentación para comprimir los datos multimedia y reducir el tamaño del archivo antes de su transmisión. Esto mejora la velocidad de transmisión y reduce el uso de ancho de banda, asegurando una experiencia de usuario sin interrupciones.<br />Servicios de Correo Electrónico:</p>
+<p>Los servicios de correo electrónico como Gmail utilizan la Capa de Presentación para convertir los correos electrónicos y sus adjuntos en un formato compatible entre diferentes sistemas. Los correos electrónicos pueden incluir texto en diferentes codificaciones, imágenes, y otros archivos que deben ser convertidos para ser visualizados correctamente en cualquier dispositivo.<br />Seguridad Web (HTTPS):</p>
+<p>Al visitar sitios web seguros que utilizan HTTPS, la Capa de Presentación juega un papel crucial en la encriptación de la información utilizando protocolos como TLS. Esto asegura que los datos confidenciales, como contraseñas y números de tarjeta de crédito, estén protegidos durante su transmisión.<br />Intercambio de Datos en Servicios Web:</p>
+<p>Aplicaciones como APIs REST utilizan JSON y XML para el intercambio de datos. La Capa de Presentación serializa estos datos en formato JSON o XML para su transmisión y los deserializa en el destino para ser utilizados por la capa de aplicación.<br />Conversión de Archivos en Aplicaciones:</p>
+<p>Herramientas de procesamiento de imágenes y editores gráficos, como Photoshop y GIMP, dependen de la Capa de Presentación para convertir y guardar archivos en diferentes formatos, permitiendo la compatibilidad y la edición en múltiples plataformas.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id56">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Ventajas y Desafíos en la Implementación de la Capa de Presentación</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta56_131_2" class="block iDevice_content">
+<div class="exe-text"><p>Ventajas:</p>
+<p>Interoperabilidad de Sistemas: Facilita la comunicación entre sistemas heterogéneos al manejar la conversión de formatos de datos.<br />Optimización de Ancho de Banda: La compresión de datos puede reducir significativamente el uso del ancho de banda, mejorando la eficiencia.<br />Seguridad de la Información: A través de la encriptación, protege la confidencialidad y la integridad de los datos durante su transmisión.<br />Desafíos:</p>
+<p>Sobrecarga Computacional: La compresión, encriptación, y traducción de datos pueden requerir una considerable cantidad de recursos de CPU, afectando el rendimiento.<br />Compatibilidad de Algoritmos: Asegurar que los algoritmos de compresión, encriptación y traducción sean compatibles entre diferentes sistemas puede ser complicado.<br />Gestión de Actualizaciones de Protocolos: Protocolos como TLS requieren actualizaciones regulares para manejar vulnerabilidades de seguridad, lo que puede implicar cambios complejos en los sistemas de red.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id57">
+<div class="iDevice emphasis0" >
+<div id="ta57_132_2" class="block iDevice_content">
+<div class="exe-text"><p>La Capa de Presentación del modelo OSI desempeña un papel crucial en la traducción, compresión, cifrado y formateo de los datos. Asegura que los datos sean compatibles, seguros y eficientes durante su transmisión entre sistemas diferentes. Aunque sus funciones pueden ser asumidas parcialmente por capas superiores o inferiores en ciertos modelos de red, sigue siendo fundamental en el diseño y comprensión de las arquitecturas de red modernas, especialmente en aplicaciones donde la interoperabilidad, la seguridad y la eficiencia de los datos son esenciales.</p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="55_la_capa_de_sesin.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="57_la_capa_de_aplicacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_adultos_js.js"></script></body></html>

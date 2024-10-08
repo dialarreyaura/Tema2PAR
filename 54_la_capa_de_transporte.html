@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>5.4. La capa de transporte | Tema 2 PAR </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Diana de Lara del Rey" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-15"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Tema 2 PAR</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Tema 2. Teoría de las comunicaciones. El modelo OSI. TCP/IP</a></li>
+   <li><a href="1_introduccin.html" class="no-ch">1. Introducción</a></li>
+   <li><a href="2_protocolos_de_comunicacin.html" class="daddy">2. Protocolos de Comunicación</a>
+   <ul class="other-section">
+      <li><a href="21_por_qu_importan_los_protocolos.html" class="no-ch">2.1. ¿Por Qué Importan los Protocolos?</a></li>
+      <li><a href="22_protocolos_de_red.html" class="no-ch">2.2. Protocolos de Red</a></li>
+   </ul>
+   </li>
+   <li><a href="3_funciones_de_la_comunicacin.html" class="no-ch">3. Funciones de la Comunicación</a></li>
+   <li><a href="4_arquitectura_de_comunicaciones.html" class="daddy">4. Arquitectura de Comunicaciones</a>
+   <ul class="other-section">
+      <li><a href="41_diseo_de_arquitectura_de_red.html" class="no-ch">4.1. Diseño de Arquitectura de Red</a></li>
+      <li><a href="42_caractersticas_de_las_arquitecturas_por_niveles.html" class="no-ch">4.2. Características de las Arquitecturas por Niveles</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="5_el_modelo_de_referencia_osi.html" class="current-page-parent daddy">5. El modelo de referencia OSI</a>
+   <ul>
+      <li><a href="51_la_capa_fsica.html" class="no-ch">5.1. La capa física</a></li>
+      <li><a href="52_la_capa_de_enlace_de_datos.html" class="no-ch">5.2. La capa de enlace de Datos</a></li>
+      <li><a href="53_la_capa_de_red.html" class="no-ch">5.3. La capa de red</a></li>
+      <li id="active"><a href="54_la_capa_de_transporte.html" class="active no-ch">5.4. La capa de transporte</a></li>
+      <li><a href="55_la_capa_de_sesin.html" class="no-ch">5.5. La capa de sesión</a></li>
+      <li><a href="56_la_capa_de_presentacin.html" class="no-ch">5.6. La capa de presentación</a></li>
+      <li><a href="57_la_capa_de_aplicacin.html" class="no-ch">5.7. La capa de aplicación</a></li>
+   </ul>
+   </li>
+   <li><a href="6_el_modelo_tcpip.html" class="daddy">6. El Modelo TCP/IP</a>
+   <ul class="other-section">
+      <li><a href="61_la_capa_de_acceso_a_red.html" class="daddy">6.1. La capa de acceso a red</a>
+      <ul class="other-section">
+         <li><a href="611_formato_de_tramas.html" class="no-ch">6.1.1. Formato de tramas</a></li>
+         <li><a href="612_direccin_mac.html" class="no-ch">6.1.2. Dirección MAC</a></li>
+      </ul>
+      </li>
+      <li><a href="62_la_capa_de_red_o_internet.html" class="daddy">6.2. La capa de red o Internet</a>
+      <ul class="other-section">
+         <li><a href="621_protocolo_ip.html" class="daddy">6.2.1. Protocolo IP</a>
+         <ul class="other-section">
+            <li><a href="6211_subredes.html" class="no-ch">6.2.1.1. Subredes</a></li>
+            <li><a href="6212_tabla_de_encaminamiento.html" class="no-ch">6.2.1.2. Tabla de encaminamiento</a></li>
+         </ul>
+         </li>
+         <li><a href="622_protocolo_arp.html" class="no-ch">6.2.2. Protocolo ARP</a></li>
+         <li><a href="623_protocolo_icmp.html" class="no-ch">6.2.3. Protocolo ICMP</a></li>
+      </ul>
+      </li>
+      <li><a href="63_la_capa_de_transporte.html" class="daddy">6.3. La capa de transporte</a>
+      <ul class="other-section">
+         <li><a href="631_protocolo_tcp.html" class="daddy">6.3.1. Protocolo TCP</a>
+         <ul class="other-section">
+            <li><a href="6311_formato_de_cabecera.html" class="no-ch">6.3.1.1. Formato de cabecera</a></li>
+            <li><a href="6312_puerto_lgico.html" class="no-ch">6.3.1.2. Puerto lógico</a></li>
+         </ul>
+         </li>
+         <li><a href="632_protocolo_udp.html" class="daddy">6.3.2. Protocolo UDP</a>
+         <ul class="other-section">
+            <li><a href="6321_formato_de_cabecera.html" class="no-ch">6.3.2.1. Formato de cabecera</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+      <li><a href="64_la_capa_de_aplicacin.html" class="no-ch">6.4. La capa de aplicación</a></li>
+   </ul>
+   </li>
+   <li><a href="7_comparacin_entre_el_modelo_osi_y_el_modelo_tcpip.html" class="no-ch">7. Comparación entre el Modelo OSI y el Modelo TCP/IP</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="53_la_capa_de_red.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="55_la_capa_de_sesin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">5.4. La capa de transporte</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id37">
+<div class="iDevice emphasis0" >
+<div id="ta37_120_2" class="block iDevice_content">
+<div class="exe-text"><p>La Capa de<strong> Transporte</strong> es la <strong>cuarta capa del modelo OSI</strong> y su <strong>principal función</strong> es proporcionar <strong>comunicación confiable o no confiable</strong> entre los dispositivos que participan en una comunicación de red, gestionando la transferencia de datos de extremo a extremo. Esta capa actúa como intermediaria entre la Capa de Red y las capas superiores del modelo OSI, asegurando que los datos lleguen de manera correcta, ordenada y sin errores desde el origen hasta el destino.</p>
+<p>La Capa de Transporte también se encarga de la segmentación, reensamblado, control de flujo, y control de errores de los datos.</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id38">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Principales Funciones de la Capa de Transporte</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta38_121_2" class="block iDevice_content">
+<div class="exe-text"><p><strong>1. Multiplexación y Demultiplexación:</strong></p>
+<p>Esta capa permite la multiplexación de múltiples aplicaciones en un solo canal de comunicación, es decir, facilita la transmisión de datos de diferentes aplicaciones o servicios simultáneamente a través de la red. En el destino, la demultiplexación permite dirigir los datos a la aplicación correcta.</p>
+<p><strong>2. Segmentación y Reensamblado de Datos:</strong></p>
+<p>Los datos provenientes de la Capa de Sesión se dividen en segmentos (si se utiliza TCP) o datagramas (si se utiliza UDP) antes de ser enviados a la Capa de Red. Cada segmento tiene un número de secuencia que permite la reensamblación ordenada en el destino.</p>
+<p><strong>3. Control de Flujo:</strong></p>
+<p>La Capa de Transporte gestiona la velocidad de transmisión de datos entre dos extremos para evitar que un receptor se vea abrumado con demasiados datos a la vez. Utiliza mecanismos como el ventaneo deslizante (sliding window) en TCP.</p>
+<p><strong>4. Control de Errores:</strong></p>
+<p>Asegura la integridad de los datos mediante códigos de verificación (checksums) en cada segmento. En caso de que un segmento sea recibido corrupto, se puede solicitar su retransmisión (en TCP).</p>
+<p><strong>5. Establecimiento, Gestión y Liberación de Conexiones:</strong></p>
+<p>En protocolos orientados a conexión como TCP, la Capa de Transporte establece, mantiene y libera conexiones entre los dispositivos de comunicación, asegurando que la sesión de datos sea manejada correctamente de principio a fin.</p>
+<p><strong>6. Transporte Confiable y No Confiable:</strong></p>
+<p>Soporta tanto el transporte confiable (garantía de entrega, orden y corrección de errores, como es el caso de TCP) como el no confiable (sin garantía de entrega, orden o corrección de errores, como es el caso de UDP).</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id39">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Protocolos Principales en la Capa de Transporte</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta39_122_2" class="block iDevice_content">
+<div class="exe-text"><p><strong>1. TCP (Transmission Control Protocol):</strong></p>
+<p>Es un protocolo orientado a la conexión que proporciona una comunicación confiable entre dos puntos en una red. TCP garantiza que los datos sean entregados correctamente y en el orden en que fueron enviados.<br /><strong>Características clave:</strong></p>
+<ul>
+<li><strong>Establecimiento de Conexión</strong>: Utiliza un proceso de handshake de tres vías para establecer una conexión confiable entre el emisor y el receptor.</li>
+<li><strong>Control de Flujo y Congestión</strong>: Utiliza técnicas de control de flujo, como la ventana deslizante y el algoritmo de control de congestión TCP Tahoe/Reno, para gestionar la transmisión de datos.</li>
+<li><strong>Reensamblado y Retransmisión</strong>: Reensambla los segmentos en el destino y retransmite los segmentos faltantes o corruptos.</li>
+</ul>
+<p><strong>Formato del Encabezado TCP:</strong></p>
+<ul>
+<li><strong>Puerto de origen y destino</strong>: Indica los puertos de las aplicaciones que envían y reciben datos.</li>
+<li><strong>Número de secuencia</strong>: Ayuda en la ordenación y reensamblado de los segmentos.</li>
+<li><strong>Número de acuse de recibo (ACK)</strong>: Indica el próximo número de secuencia esperado.</li>
+<li>Longitud del encabezado, bandera de control, ventana, checksum, urgencia: Campos adicionales para el control de flujo, estado de la conexión y verificación de errores.</li>
+</ul>
+<p><strong>2. UDP (User Datagram Protocol):</strong></p>
+<p>Es un protocolo no orientado a la conexión que ofrece una comunicación no confiable pero rápida. No garantiza la entrega ordenada ni la corrección de errores.<br /><strong>Características clave:</strong></p>
+<ul>
+<li><strong>No requiere establecimiento de conexión</strong>: Por lo tanto, reduce la latencia de comunicación.</li>
+<li><strong>Menor sobrecarga de protocolo</strong>: No hay necesidad de mantener el estado de la conexión.</li>
+<li><strong>Ideal para aplicaciones en tiempo real</strong>: Se usa en aplicaciones donde la velocidad es más importante que la confiabilidad, como streaming de video, juegos en <strong>línea, y VoIP.</strong></li>
+</ul>
+<p><strong>Formato del Encabezado UDP:</strong></p>
+<ul>
+<li><strong>Puerto de origen y destino, longitud, checksum</strong>: Campos necesarios para la entrega de datagramas y verificación básica de errores.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id40">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Procesos Clave en la Capa de Transporte</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta40_123_2" class="block iDevice_content">
+<div class="exe-text"><p><strong>1. Establecimiento y Cierre de Conexión en TCP:</strong></p>
+<ul>
+<li><strong>Handshake de tres vías</strong>: El cliente envía un segmento <strong>SYN</strong>, el servidor responde con <strong>SYN-ACK</strong>, y el cliente confirma con un <strong>ACK</strong>. Esto asegura que ambas partes estén listas para enviar y recibir datos.</li>
+<li><strong>Cierre de Conexión</strong>: Utiliza un proceso de <strong>four-way handshake</strong> con segmentos <strong>FIN</strong> y <strong>ACK</strong> para finalizar la comunicación de manera ordenada.</li>
+</ul>
+<p><strong>2. Control de Flujo con Ventana Deslizante:</strong></p>
+<p><strong>TCP</strong> utiliza una técnica de <strong>ventana</strong> <strong>deslizante</strong> que permite al emisor enviar múltiples segmentos antes de esperar un ACK, optimizando el rendimiento y asegurando que la velocidad de envío se adapte a la capacidad del receptor.</p>
+<p><strong>3. Detección de Errores y Retransmisión en TCP:</strong></p>
+<p>Cada segmento TCP lleva un checksum. Si un segmento llega con errores, el receptor lo descarta y solicita su retransmisión.<br />TCP también utiliza técnicas como ACK acumulativo para confirmar la recepción de varios segmentos consecutivos.</p>
+<p><strong>4. Transmisión de Datagramas en UDP:</strong></p>
+<p>UDP simplemente envía datagramas desde el emisor al receptor sin establecer una conexión. Cada datagrama se trata de manera independiente.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id41">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Ejemplos Prácticos de la Capa de Transporte</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta41_124_2" class="block iDevice_content">
+<div class="exe-text"><p><strong>Aplicaciones basadas en TCP:</strong> Navegadores web (HTTP/HTTPS), transferencia de archivos (FTP), correo electrónico (SMTP, IMAP).<br /><strong>Aplicaciones basadas en UDP:</strong> Streaming de video/audio (por ejemplo, Netflix, YouTube), juegos en línea (por ejemplo, League of Legends, Fortnite), DNS (Domain Name System).</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id42">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Comparativa entre la Capa de Transporte y la Capa de Enlace de Datos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta42_125_2" class="block iDevice_content">
+<div class="exe-text"><p>Aunque la Capa de Transporte (Capa 4) y la Capa de Enlace de Datos (Capa 2) del modelo OSI comparten ciertas funciones, como el control de flujo y el control de errores, lo hacen con propósitos diferentes y en diferentes niveles del modelo de red. A continuación, te presento una comparativa detallada entre ambas capas:</p>
+<table style="width: 100%; height: 474px;" border="1">
+<tbody>
+<tr style="height: 26px;">
+<td style="width: 20%; height: 26px; text-align: center; background-color: #054196; border-color: #140480; border-style: solid;"><span style="color: #ffffff;"><strong>Aspecto</strong></span></td>
+<td style="width: 40%; height: 26px; text-align: center; background-color: #054196; border-color: #140480; border-style: solid;"><span style="color: #ffffff;"><strong>Capa de Enlace de Datos<br /></strong></span></td>
+<td style="width: 40%; height: 26px; background-color: #054196; text-align: center; border-color: #140480; border-style: solid;"><span style="color: #ffffff;"><strong>Capa de Transporte<br /></strong></span></td>
+</tr>
+<tr style="height: 107px;">
+<td style="width: 20%; height: 107px; background-color: #99d0f0; border-color: #140480; border-style: solid;"><strong>Propósito Principal</strong></td>
+<td style="height: 107px; width: 40%; border-color: #140480; border-style: solid;">Garantizar la <strong>transmisión fiable</strong> de tramas entre dos nodos directamente conectados en una <strong>red local</strong> (LAN o WAN).</td>
+<td style="width: 40%; height: 107px; border-color: #140480; border-style: solid;">Proporcionar <strong>comunicación fiable o no fiable de extremo a extremo</strong> entre dos procesos que se ejecutan en diferentes dispositivos a través de <strong>una o más redes</strong>.</td>
+</tr>
+<tr style="height: 80px;">
+<td style="width: 20%; height: 80px; background-color: #99d0f0; border-color: #140480; border-style: solid;"><strong>Tipo de Comunicación</strong></td>
+<td style="width: 40%; height: 80px; border-color: #140480; border-style: solid;"><strong>Enlace punto a punto</strong> o <strong>enlace de red local.</strong> Trabaja en segmentos de red, es decir, dentro del mismo dominio de transmisión.</td>
+<td style="width: 40%; height: 80px; border-color: #140480; border-style: solid;"><strong>Comunicación extremo a extremo</strong> entre sistemas finales, abarcando diferentes redes y dominios de transmisión.</td>
+</tr>
+<tr style="height: 53px;">
+<td style="width: 20%; height: 53px; background-color: #99d0f0; border-color: #140480; border-style: solid;"><strong>Unidad de Datos</strong></td>
+<td style="width: 40%; height: 53px; border-color: #140480; border-style: solid;">Trama (Frame). Incluye un encabezado con la <strong>dirección MAC</strong> de origen y destino, entre otros campos.</td>
+<td style="width: 40%; height: 53px; border-color: #140480; border-style: solid;"><strong>Segmento</strong> (si es TCP) o <strong>Datagrama</strong> (si es UDP). Incluye un encabezado con números de <strong>puerto</strong>, <strong>números de secuencia</strong>, etc.</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 20%; height: 26px; background-color: #99d0f0; border-color: #140480; border-style: solid;"><strong>Protocolos Principales</strong></td>
+<td style="width: 40%; height: 26px; border-color: #140480; border-style: solid;"><strong>Ethernet, PPP (Point-to-Point Protocol), Frame Relay, HDLC,</strong> etc.</td>
+<td style="width: 40%; height: 26px; border-color: #140480; border-style: solid;"><strong>TCP</strong> (Transmission Control Protocol) y <strong>UDP</strong> (User Datagram Protocol).</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 20%; height: 26px; background-color: #99d0f0; border-color: #140480; border-style: solid;"><strong>Control de Flujo</strong></td>
+<td style="width: 40%; height: 26px; border-color: #140480; border-style: solid;">Administra el <strong>flujo</strong> <strong>de</strong> <strong>tramas</strong> entre dos dispositivos directamente conectados para evitar la sobrecarga del receptor.</td>
+<td style="width: 40%; height: 26px; border-color: #140480; border-style: solid;">Administra el <strong>flujo</strong> <strong>de</strong> <strong>segmentos</strong> entre el origen y el destino a través de múltiples redes, asegurando que los datos no se envíen más rápido de lo que el receptor puede procesar. Utiliza técnicas como el ventaneo deslizante.</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 20%; height: 26px; background-color: #99d0f0; border-color: #140480; border-style: solid;"><strong>Control de Errores</strong></td>
+<td style="height: 26px; width: 40%; border-color: #140480; border-style: solid;">Detecta y corrige errores de transmisión en tramas individuales utilizando técnicas como <strong>CRC (Cyclic Redundancy Check), ACK/NACK y retransmisión automática</strong>.</td>
+<td style="width: 40%; height: 26px; border-color: #140480; border-style: solid;">Detecta errores de segmentos utilizando <strong>checksums</strong> y maneja la retransmisión de datos faltantes o corruptos a nivel de aplicación. Se asegura de que los datos lleguen completos y en orden (en el caso de TCP).</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 20%; height: 26px; background-color: #99d0f0; border-color: #140480; border-style: solid;"><strong>Establecimiento de Conexión</strong></td>
+<td style="height: 26px; width: 40%; border-color: #140480; border-style: solid;">Generalmente, no establece conexión. La transmisión es orientada a tramas y se maneja de forma individual. Sin embargo, algunos protocolos de enlace de datos como <strong>PPP</strong> pueden establecer conexiones para ciertas configuraciones.</td>
+<td style="width: 40%; height: 26px; border-color: #140480; border-style: solid;">En <strong>TCP</strong>, establece una conexión fiable utilizando el <strong>handshake</strong> <strong>de tres vías</strong>. En <strong>UDP</strong>, no se establece conexión, permitiendo una comunicación rápida pero no confiable.</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 20%; height: 26px; background-color: #99d0f0; border-color: #140480; border-style: solid;"><strong>Encapsulación de Datos</strong></td>
+<td style="height: 26px; width: 40%; border-color: #140480; border-style: solid;">Encapsula los <strong>paquetes</strong> de la Capa de Red en <strong>tramas</strong> añadiendo un encabezado de Capa 2.</td>
+<td style="width: 40%; height: 26px; border-color: #140480; border-style: solid;">Encapsula los <strong>datos de la Capa de Aplicación</strong> en <strong>segmentos</strong> o <strong>datagramas</strong>, que luego se pasan a la Capa de Red.</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 20%; height: 26px; background-color: #99d0f0; border-color: #140480; border-style: solid;"><strong>Fragmentación y Reensamblado</strong></td>
+<td style="height: 26px; width: 40%; border-color: #140480; border-style: solid;">Puede realizar <strong>fragmentación</strong> a nivel de trama si el tamaño supera el <strong>MTU</strong> (<strong>MaximumTransmissionUnit)</strong> del enlace de red.</td>
+<td style="width: 40%; height: 26px; border-color: #140480; border-style: solid;">Puede realizar <strong>fragmentación</strong> a nivel de segmento en el caso de que el tamaño de los datos sea mayor al tamaño del segmento permitido por la red.</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 20%; height: 26px; background-color: #99d0f0; border-color: #140480; border-style: solid;"><strong>Ámbito de Aplicación</strong></td>
+<td style="height: 26px; width: 40%; border-color: #140480; border-style: solid;">Se aplica a la transmisión de datos dentro de una <strong>red</strong> <strong>local</strong> o un <strong>enlace de red específica</strong>.</td>
+<td style="width: 40%; height: 26px; border-color: #140480; border-style: solid;">Se aplica a la transmisión de datos en una <strong>comunicación extremo a extremo</strong> entre diferentes redes y dominios.</td>
+</tr>
+<tr style="height: 26px;">
+<td style="width: 20%; height: 26px; background-color: #99d0f0; border-color: #140480; border-style: solid;"><strong>Aseguramiento de Entrega</strong></td>
+<td style="height: 26px; width: 40%; border-color: #140480; border-style: solid;">Garantiza la entrega confiable de datos dentro de la misma red o enlace de comunicación directa, utilizando ACK/NACK.</td>
+<td style="width: 40%; height: 26px; border-color: #140480; border-style: solid;">TCP garantiza la entrega confiable de datos entre dispositivos de redes separadas utilizando <strong>números de secuencia, acuses de recibo, retransmisión</strong>, etc. UDP, por otro lado, no asegura la entrega.</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p><strong>Similitudes entre la Capa de Enlace de Datos y la Capa de Transporte:</strong></p>
+<p><strong>1. Control de Flujo:</strong></p>
+<p>Ambas capas implementan <strong>control de flujo</strong> para evitar que el receptor se vea abrumado por demasiados datos. Sin embargo, mientras que la <strong>Capa de Enlace de Datos</strong> lo hace entre dos dispositivos conectados directamente (por ejemplo, dos routers conectados en una LAN), la <strong>Capa de Transporte</strong> lo hace a nivel de <strong>aplicación</strong> entre dos dispositivos finales en diferentes redes.</p>
+<p><strong>2. Control de Errores:</strong></p>
+<p>Ambas capas ofrecen mecanismos para la <strong>detección y corrección de errores</strong>. La <strong>Capa de Enlace de Datos</strong> lo hace a nivel de tramas utilizando CRC y confirmaciones de recepción (ACK/NACK), mientras que la <strong>Capa de Transporte</strong>, especialmente TCP, lo hace a nivel de segmentos utilizando checksums y retransmisiones basadas en acuses de recibo (ACK).</p>
+<p><strong>Diferencias Fundamentales:</strong></p>
+<p><strong>1. Ámbito de Operación:</strong></p>
+<p>La Capa de Enlace de Datos opera en un ámbito local, entre nodos directamente conectados en una red de área local o en un único enlace. Por el contrario, la Capa de Transporte opera en un ámbito de red global, gestionando la comunicación entre dispositivos a través de múltiples redes interconectadas.</p>
+<p><strong>2. Establecimiento de Conexión:</strong></p>
+<p>La <strong>Capa de Enlace de Datos</strong> típicamente no establece conexiones, y los datos se envían de manera directa y no orientada a conexión. Sin embargo, la <strong>Capa de Transporte</strong>, especialmente TCP, puede establecer y cerrar conexiones para asegurar una comunicación fiable.</p>
+<p><strong>3. Tipo de Unidad de Datos:</strong></p>
+<p>La <strong>Capa de Enlace de Datos</strong> trabaja con <strong>tramas</strong>, mientras que la <strong>Capa de Transporte</strong> trabaja con <strong>segmentos</strong> o <strong>datagramas</strong>. Esto refleja las diferencias en el tipo de información que manejan y cómo la gestionan.</p>
+<p><strong>4. Encapsulación:</strong></p>
+<p>La <strong>Capa de Enlace de Datos</strong> encapsula <strong>paquetes</strong> de la Capa de Red <strong>en tramas</strong>, mientras que la <strong>Capa de Transporte</strong> encapsula <strong>datos de aplicación en</strong> <strong>segmentos</strong> o <strong>datagramas</strong>, que luego se pasan a la Capa de Red.</p>
+<p>Aunque la Capa de Enlace de Datos (Capa 2) y la Capa de Transporte (Capa 4) pueden compartir funciones similares como el control de flujo y el control de errores, lo hacen en diferentes contextos y niveles del modelo OSI. La <strong>Capa de Enlace de Datos</strong> se centra en la <strong>fiabilidad de la comunicación local</strong> entre nodos en una red, mientras que la<strong> Capa de Transporte</strong> se centra en la <strong>comunicación fiable y gestionada extremo a extremo</strong> a través de múltiples redes. Esta diferencia fundamental en el ámbito de aplicación y propósito hace que cada capa sea única en su contribución al modelo OSI y esencial para la comunicación en redes informáticas.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id44">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Importancia de la Capa de Transporte</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta44_127_2" class="block iDevice_content">
+<div class="exe-text"><p>La importancia de esta capa está en:</p>
+<ul>
+<li><strong>Fiabilidad de la Comunicación</strong>: Asegura la entrega precisa y ordenada de los datos (en el caso de TCP), lo cual es crítico para aplicaciones que requieren confiabilidad.</li>
+<li><strong>Eficiencia de Recursos</strong>: Permite un uso eficiente de los recursos de red mediante técnicas como el control de flujo y el control de congestión.</li>
+<li><strong>Flexibilidad para Diferentes Tipos de Aplicaciones</strong>: Proporciona la opción de comunicación confiable (TCP) o rápida pero no confiable (UDP), adaptándose a diferentes necesidades de aplicaciones.</li>
+</ul>
+<p>La <strong>Capa de Transporte</strong> del modelo OSI juega un papel fundamental en la arquitectura de red al proporcionar c<strong>omunicación de extremo a extremo</strong> con mecanismos de<strong> control de flujo, errores, y multiplexación</strong>. El conocimiento profundo de esta capa es crucial para entender cómo se entregan los datos en una red y cómo se optimizan los recursos de comunicación para garantizar la eficiencia y la fiabilidad.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="53_la_capa_de_red.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="55_la_capa_de_sesin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_adultos_js.js"></script></body></html>

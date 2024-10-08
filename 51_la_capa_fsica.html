@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>5.1. La capa física | Tema 2 PAR </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Diana de Lara del Rey" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-9"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Tema 2 PAR</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Tema 2. Teoría de las comunicaciones. El modelo OSI. TCP/IP</a></li>
+   <li><a href="1_introduccin.html" class="no-ch">1. Introducción</a></li>
+   <li><a href="2_protocolos_de_comunicacin.html" class="daddy">2. Protocolos de Comunicación</a>
+   <ul class="other-section">
+      <li><a href="21_por_qu_importan_los_protocolos.html" class="no-ch">2.1. ¿Por Qué Importan los Protocolos?</a></li>
+      <li><a href="22_protocolos_de_red.html" class="no-ch">2.2. Protocolos de Red</a></li>
+   </ul>
+   </li>
+   <li><a href="3_funciones_de_la_comunicacin.html" class="no-ch">3. Funciones de la Comunicación</a></li>
+   <li><a href="4_arquitectura_de_comunicaciones.html" class="daddy">4. Arquitectura de Comunicaciones</a>
+   <ul class="other-section">
+      <li><a href="41_diseo_de_arquitectura_de_red.html" class="no-ch">4.1. Diseño de Arquitectura de Red</a></li>
+      <li><a href="42_caractersticas_de_las_arquitecturas_por_niveles.html" class="no-ch">4.2. Características de las Arquitecturas por Niveles</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="5_el_modelo_de_referencia_osi.html" class="current-page-parent daddy">5. El modelo de referencia OSI</a>
+   <ul>
+      <li id="active"><a href="51_la_capa_fsica.html" class="active no-ch">5.1. La capa física</a></li>
+      <li><a href="52_la_capa_de_enlace_de_datos.html" class="no-ch">5.2. La capa de enlace de Datos</a></li>
+      <li><a href="53_la_capa_de_red.html" class="no-ch">5.3. La capa de red</a></li>
+      <li><a href="54_la_capa_de_transporte.html" class="no-ch">5.4. La capa de transporte</a></li>
+      <li><a href="55_la_capa_de_sesin.html" class="no-ch">5.5. La capa de sesión</a></li>
+      <li><a href="56_la_capa_de_presentacin.html" class="no-ch">5.6. La capa de presentación</a></li>
+      <li><a href="57_la_capa_de_aplicacin.html" class="no-ch">5.7. La capa de aplicación</a></li>
+   </ul>
+   </li>
+   <li><a href="6_el_modelo_tcpip.html" class="daddy">6. El Modelo TCP/IP</a>
+   <ul class="other-section">
+      <li><a href="61_la_capa_de_acceso_a_red.html" class="daddy">6.1. La capa de acceso a red</a>
+      <ul class="other-section">
+         <li><a href="611_formato_de_tramas.html" class="no-ch">6.1.1. Formato de tramas</a></li>
+         <li><a href="612_direccin_mac.html" class="no-ch">6.1.2. Dirección MAC</a></li>
+      </ul>
+      </li>
+      <li><a href="62_la_capa_de_red_o_internet.html" class="daddy">6.2. La capa de red o Internet</a>
+      <ul class="other-section">
+         <li><a href="621_protocolo_ip.html" class="daddy">6.2.1. Protocolo IP</a>
+         <ul class="other-section">
+            <li><a href="6211_subredes.html" class="no-ch">6.2.1.1. Subredes</a></li>
+            <li><a href="6212_tabla_de_encaminamiento.html" class="no-ch">6.2.1.2. Tabla de encaminamiento</a></li>
+         </ul>
+         </li>
+         <li><a href="622_protocolo_arp.html" class="no-ch">6.2.2. Protocolo ARP</a></li>
+         <li><a href="623_protocolo_icmp.html" class="no-ch">6.2.3. Protocolo ICMP</a></li>
+      </ul>
+      </li>
+      <li><a href="63_la_capa_de_transporte.html" class="daddy">6.3. La capa de transporte</a>
+      <ul class="other-section">
+         <li><a href="631_protocolo_tcp.html" class="daddy">6.3.1. Protocolo TCP</a>
+         <ul class="other-section">
+            <li><a href="6311_formato_de_cabecera.html" class="no-ch">6.3.1.1. Formato de cabecera</a></li>
+            <li><a href="6312_puerto_lgico.html" class="no-ch">6.3.1.2. Puerto lógico</a></li>
+         </ul>
+         </li>
+         <li><a href="632_protocolo_udp.html" class="daddy">6.3.2. Protocolo UDP</a>
+         <ul class="other-section">
+            <li><a href="6321_formato_de_cabecera.html" class="no-ch">6.3.2.1. Formato de cabecera</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+      <li><a href="64_la_capa_de_aplicacin.html" class="no-ch">6.4. La capa de aplicación</a></li>
+   </ul>
+   </li>
+   <li><a href="7_comparacin_entre_el_modelo_osi_y_el_modelo_tcpip.html" class="no-ch">7. Comparación entre el Modelo OSI y el Modelo TCP/IP</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="5_el_modelo_de_referencia_osi.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="52_la_capa_de_enlace_de_datos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">5.1. La capa física</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id17">
+<div class="iDevice emphasis0" >
+<div id="ta17_137_2" class="block iDevice_content">
+<div class="exe-text"><p>La Capa Física es la primera y más básica capa del modelo OSI. Su principal responsabilidad es la transmisión de bits brutos (0s y 1s) a través de un medio de transmisión físico. La capa física no interpreta los datos que transmite; simplemente se ocupa de las características mecánicas, eléctricas, ópticas y funcionales necesarias para establecer, mantener y desactivar conexiones físicas entre los sistemas.</p>
+<p>La capa física abarca el interfaz físico entre los dispositivos y las reglas por las cuales se pasan los bits de uno en uno. Se encarga de proporcionar el soporte material para la transmisión de la información.</p>
+<p>Los objetivos de la capa física son:</p>
+<ul>
+<li>Proporcionar una interfaz física para la transmisión de bits.</li>
+<li>Asegurar que los datos se transmitan de manera efectiva y eficiente a través del medio físico.</li>
+<li>Definir las características de la transmisión, como la señalización, sincronización y topología de red</li>
+</ul>
+<p>La capa física tiene cuatro características importantes:</p>
+<ul>
+<li><strong>Mecánicas:</strong> normalmente, incluye la especificación de un conector que une una o más señales del conductor, llamadas circuitos.</li>
+<li><strong>Eléctricas:</strong> relaciona la representación de los bits y la tasa de transmisión de datos.</li>
+<li><strong>Funcional:</strong> especifica las funciones realizadas por los circuitos individuales de la interfaz física entre un sistema y el medio de transmisión.</li>
+<li><strong>De procedimiento:</strong> especifica la secuencia de eventos por los que se intercambia un flujo de bits a través del medio físico.</li>
+</ul></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id18">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Responsabilidades y Tareas Clave</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta18_138_2" class="block iDevice_content">
+<div class="exe-text"><p>Las responsabilidades que tiene la capa física y las tareas que se deben realizar en esta etapa son:</p>
+<p><strong>1. Especificación de Medios de Transmisión:</strong></p>
+<ul>
+<li><strong>Cables de Par Trenzado (UTP/STP):</strong> Utilizados comúnmente en redes Ethernet, los cables de par trenzado (como Cat 5e, Cat 6) ofrecen transmisión de datos a través de pares de conductores de cobre trenzados.</li>
+<li><strong>Fibra Óptica:</strong> Utiliza pulsos de luz en lugar de señales eléctricas para transmitir datos a través de largas distancias con una alta velocidad y baja atenuación.</li>
+<li><strong>Medios Inalámbricos:</strong> Utiliza ondas de radio (Wi-Fi), infrarrojos o satélites para transmitir datos sin cables.</li>
+</ul>
+<p><strong>2. Codificación y Señalización de Datos:</strong></p>
+<ul>
+<li><strong>Codificación de Línea:</strong> Transforma los bits en señales digitales o analógicas. Ejemplos de técnicas de codificación son <strong>NRZ (Non-Return to Zero), Manchester, 4B/5B, NRZI (Non-Return to Zero Inverted).</strong></li>
+<li><strong>Modulación:</strong> En transmisión analógica, los datos digitales se modulan en una señal portadora mediante técnicas como <strong>ASK (Amplitude Shift Keying), FSK (Frequency Shift Keying), PSK (Phase Shift Keying), y QAM (Quadrature Amplitude Modulation).</strong></li>
+</ul>
+<p><strong>3.Transmisión de Bits:</strong></p>
+<ul>
+<li>Los bits de datos se transmiten en serie (uno tras otro) o en paralelo (varios bits simultáneamente) según la tecnología de transmisión.</li>
+<li>La capa física determina la dirección de transmisión, que puede ser simplex (unidireccional), half-duplex (bidireccional alterno) o full-duplex (bidireccional simultáneo).</li>
+</ul>
+<p><strong>4. Topología de Red y Conectores:</strong></p>
+<ul>
+<li>La capa física define la<strong> topología física de la red</strong>, que puede ser en <strong>estrella, bus, anillo, malla o híbrida,</strong> y especifica cómo se conectan los dispositivos.</li>
+<li>Especifica los conectores utilizados, como RJ45 para Ethernet, SC y LC para fibra óptica, o conectores coaxiales como BNC.</li>
+</ul>
+<p><strong>5. Sincronización de Bits y Control de Velocidad:</strong></p>
+<ul>
+<li>La <strong>sincronización de bits</strong> asegura que el transmisor y el receptor estén alineados en cuanto a cuándo comienza y termina cada bit. Las señales pueden ser <strong>sincrónicas</strong> (con una señal de reloj común) o <strong>asincrónicas</strong> (con señales de inicio/parada).</li>
+<li>El <strong>control de velocidad</strong> o <strong>control de flujo</strong> ajusta la velocidad de transmisión de bits para que coincida con la capacidad del receptor, evitando la pérdida de datos.</li>
+</ul>
+<p><strong>6. Detección de Errores de Bajo Nivel:</strong></p>
+<p>Aunque la capa física no se encarga de corregir errores, algunas tecnologías incluyen mecanismos básicos de <strong>detección de errores</strong>, como la detección de paridad o sumas de comprobación (checksums).</p>
+<p><strong>7. Multiplexación y Demultiplexación:</strong></p>
+<p><strong>Multiplexación:</strong> La capa física puede utilizar técnicas de multiplexación para compartir un medio de transmisión entre múltiples señales. Ejemplos son <strong>TDM (Time Division Multiplexing)</strong> y <strong>FDM</strong> <strong>(Frequency Division Multiplexing).</strong></p>
+<p><strong>8. Especificación de Componentes de Hardware:</strong></p>
+<p>Define los repetidores, <strong>concentradores (hubs), amplificadores, conectores</strong> y otros equipos físicos necesarios para la transmisión de datos.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id19">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Protocolos y Tecnologías en la Capa Física</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta19_139_2" class="block iDevice_content">
+<div class="exe-text"><p><strong>Ethernet (IEEE 802.3):</strong> Define los estándares físicos para la transmisión en redes de área local (LAN), incluyendo el tipo de cableado, la señalización y las tasas de bits.<br /><strong>Wi-Fi (IEEE 802.11):</strong> Protocolo para redes inalámbricas, define las características de la transmisión de señales de radio para la transmisión de datos.<br /><strong>Bluetooth (IEEE 802.15):</strong> Estándar de comunicación para la transmisión de datos en distancias cortas utilizando ondas de radio.<br /><strong>USB (Universal Serial Bus):</strong> Protocolo para la comunicación entre dispositivos y un host, como computadoras.<br /><strong>DSL (Digital Subscriber Line):</strong> Utiliza cables telefónicos de cobre para proporcionar acceso a internet de alta velocidad.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id20">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Ejemplos Prácticos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta20_140_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li>En una red <strong>Ethernet</strong>, la capa física define el tipo de cable (Cat 5e, Cat 6), la tasa de bits (10 Mbps, 100 Mbps, 1 Gbps), los conectores (RJ45) y la topología (estrella).</li>
+<li>En redes de <strong>fibra óptica</strong>, define el tipo de fibra (monomodo o multimodo), los conectores (LC, SC), los transceptores, y las longitudes de onda utilizadas para la transmisión.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id21">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Importancia de la Capa Física</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta21_141_2" class="block iDevice_content">
+<div class="exe-text"><p>La importancia de la capa física se debe a varios factores:</p>
+<ul>
+<li><strong>Base de la Comunicación en Redes:</strong> Todas las demás capas dependen de la capa física para la transmisión efectiva de datos.</li>
+<li><strong>Optimización y Mantenimiento de Redes:</strong> Los ingenieros de redes deben comprender la capa física para diseñar, mantener y solucionar problemas de las redes.</li>
+<li><strong>Adaptabilidad:</strong> Las innovaciones en la capa física (como nuevas técnicas de modulación o medios de transmisión) pueden mejorar significativamente la velocidad y la capacidad de las redes.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper EleccionmultiplefpdIdevice em_iDevice em_iDevice_autoevaluacionfpd" id="id11">
+<div class="iDevice emphasis_autoevaluacionfpd" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Autoevaluación</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section class="question">
+<form name="multi-choice-form-11_157" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion11_157" class="block question iDevice_content">
+<p>¿Verdadero o falso? La capa física solo se refiere a las conexiones de red cableadas.</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i11_160" class="sr-av"><a href="#answer-11_160">Opción 1</a></label><input type="radio" name="option11_157" id="i11_160" class="exe-radio-option exe-radio-option-0-2-11_157-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-11_160"><div id="taans11_160" class="block iDevice_content">
+<p>Verdadero</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i11_242" class="sr-av"><a href="#answer-11_242">Opción 2</a></label><input type="radio" name="option11_157" id="i11_242" class="exe-radio-option exe-radio-option-1-2-11_157-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-11_242"><div id="taans11_242" class="block iDevice_content">
+<p>Falso</p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b11_157" class="feedback js-hidden">
+<p>Incorrecto</p>
+</section>
+<section id="sa1b11_157" class="feedback js-hidden">
+<p>Opción correcta</p>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-11_160">Incorrecto</a><span> (<a href="#sa0b11_157">Retroalimentación</a>)</span></li>
+<li><a href="#answer-11_242">Opción correcta</a><span> (<a href="#sa1b11_157">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+<br/><section class="question">
+<form name="multi-choice-form-11_247" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion11_247" class="block question iDevice_content">
+<p>¿Cuál es la principal función de la Capa Física en el modelo OSI?</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i11_250" class="sr-av"><a href="#answer-11_250">Opción 1</a></label><input type="radio" name="option11_247" id="i11_250" class="exe-radio-option exe-radio-option-0-4-11_247-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-11_250"><div id="taans11_250" class="block iDevice_content">
+<p>a) Transmitir datos a nivel de aplicación.</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i11_253" class="sr-av"><a href="#answer-11_253">Opción 2</a></label><input type="radio" name="option11_247" id="i11_253" class="exe-radio-option exe-radio-option-1-4-11_247-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-11_253"><div id="taans11_253" class="block iDevice_content">
+<p>b) Gestionar el enrutamiento de paquetes de datos.</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i11_256" class="sr-av"><a href="#answer-11_256">Opción 3</a></label><input type="radio" name="option11_247" id="i11_256" class="exe-radio-option exe-radio-option-2-4-11_247-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-11_256"><div id="taans11_256" class="block iDevice_content">
+<p>c) Transmitir bits de datos a través de un medio físico.</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i11_259" class="sr-av"><a href="#answer-11_259">Opción 4</a></label><input type="radio" name="option11_247" id="i11_259" class="exe-radio-option exe-radio-option-3-4-11_247-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-11_259"><div id="taans11_259" class="block iDevice_content">
+<p>d) Controlar el flujo de datos entre aplicaciones.</p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b11_247" class="feedback js-hidden">
+<p>Incorrecto</p>
+</section>
+<section id="sa1b11_247" class="feedback js-hidden">
+<p>Incorrecto</p>
+</section>
+<section id="sa2b11_247" class="feedback js-hidden">
+<p>Opción correcta</p>
+</section>
+<section id="sa3b11_247" class="feedback js-hidden">
+<p>Incorrecto</p>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-11_250">Incorrecto</a><span> (<a href="#sa0b11_247">Retroalimentación</a>)</span></li>
+<li><a href="#answer-11_253">Incorrecto</a><span> (<a href="#sa1b11_247">Retroalimentación</a>)</span></li>
+<li><a href="#answer-11_256">Opción correcta</a><span> (<a href="#sa2b11_247">Retroalimentación</a>)</span></li>
+<li><a href="#answer-11_259">Incorrecto</a><span> (<a href="#sa3b11_247">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+<br/><section class="question">
+<form name="multi-choice-form-11_262" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion11_262" class="block question iDevice_content">
+<p>¿Qué técnica se utiliza en la Capa Física para dividir un medio de transmisión en varios canales lógicos?</p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i11_265" class="sr-av"><a href="#answer-11_265">Opción 1</a></label><input type="radio" name="option11_262" id="i11_265" class="exe-radio-option exe-radio-option-0-4-11_262-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-11_265"><div id="taans11_265" class="block iDevice_content">
+<p>a) Multiplexación por división de tiempo (TDM)</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i11_268" class="sr-av"><a href="#answer-11_268">Opción 2</a></label><input type="radio" name="option11_262" id="i11_268" class="exe-radio-option exe-radio-option-1-4-11_262-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-11_268"><div id="taans11_268" class="block iDevice_content">
+<p>b) Conmutación de paquetes</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i11_271" class="sr-av"><a href="#answer-11_271">Opción 3</a></label><input type="radio" name="option11_262" id="i11_271" class="exe-radio-option exe-radio-option-2-4-11_262-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-11_271"><div id="taans11_271" class="block iDevice_content">
+<p>c) Cifrado de datos</p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i11_274" class="sr-av"><a href="#answer-11_274">Opción 4</a></label><input type="radio" name="option11_262" id="i11_274" class="exe-radio-option exe-radio-option-3-4-11_262-multi"/>
+</p>
+<div class="iDevice_answer-content" id="answer-11_274"><div id="taans11_274" class="block iDevice_content">
+<p>d) Segmentación de datos</p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b11_262" class="feedback js-hidden">
+<p>Opción correcta</p>
+</section>
+<section id="sa1b11_262" class="feedback js-hidden">
+<p>Incorrecto</p>
+</section>
+<section id="sa2b11_262" class="feedback js-hidden">
+<p>Incorrecto</p>
+</section>
+<section id="sa3b11_262" class="feedback js-hidden">
+<p>Incorrecto</p>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-11_265">Opción correcta</a><span> (<a href="#sa0b11_262">Retroalimentación</a>)</span></li>
+<li><a href="#answer-11_268">Incorrecto</a><span> (<a href="#sa1b11_262">Retroalimentación</a>)</span></li>
+<li><a href="#answer-11_271">Incorrecto</a><span> (<a href="#sa2b11_262">Retroalimentación</a>)</span></li>
+<li><a href="#answer-11_274">Incorrecto</a><span> (<a href="#sa3b11_262">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="5_el_modelo_de_referencia_osi.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="52_la_capa_de_enlace_de_datos.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_adultos_js.js"></script></body></html>

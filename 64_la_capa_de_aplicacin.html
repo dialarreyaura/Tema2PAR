@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>6.4. La capa de aplicación | Tema 2 PAR </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Diana de Lara del Rey" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-24"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Tema 2 PAR</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Tema 2. Teoría de las comunicaciones. El modelo OSI. TCP/IP</a></li>
+   <li><a href="1_introduccin.html" class="no-ch">1. Introducción</a></li>
+   <li><a href="2_protocolos_de_comunicacin.html" class="daddy">2. Protocolos de Comunicación</a>
+   <ul class="other-section">
+      <li><a href="21_por_qu_importan_los_protocolos.html" class="no-ch">2.1. ¿Por Qué Importan los Protocolos?</a></li>
+      <li><a href="22_protocolos_de_red.html" class="no-ch">2.2. Protocolos de Red</a></li>
+   </ul>
+   </li>
+   <li><a href="3_funciones_de_la_comunicacin.html" class="no-ch">3. Funciones de la Comunicación</a></li>
+   <li><a href="4_arquitectura_de_comunicaciones.html" class="daddy">4. Arquitectura de Comunicaciones</a>
+   <ul class="other-section">
+      <li><a href="41_diseo_de_arquitectura_de_red.html" class="no-ch">4.1. Diseño de Arquitectura de Red</a></li>
+      <li><a href="42_caractersticas_de_las_arquitecturas_por_niveles.html" class="no-ch">4.2. Características de las Arquitecturas por Niveles</a></li>
+   </ul>
+   </li>
+   <li><a href="5_el_modelo_de_referencia_osi.html" class="daddy">5. El modelo de referencia OSI</a>
+   <ul class="other-section">
+      <li><a href="51_la_capa_fsica.html" class="no-ch">5.1. La capa física</a></li>
+      <li><a href="52_la_capa_de_enlace_de_datos.html" class="no-ch">5.2. La capa de enlace de Datos</a></li>
+      <li><a href="53_la_capa_de_red.html" class="no-ch">5.3. La capa de red</a></li>
+      <li><a href="54_la_capa_de_transporte.html" class="no-ch">5.4. La capa de transporte</a></li>
+      <li><a href="55_la_capa_de_sesin.html" class="no-ch">5.5. La capa de sesión</a></li>
+      <li><a href="56_la_capa_de_presentacin.html" class="no-ch">5.6. La capa de presentación</a></li>
+      <li><a href="57_la_capa_de_aplicacin.html" class="no-ch">5.7. La capa de aplicación</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="6_el_modelo_tcpip.html" class="current-page-parent daddy">6. El Modelo TCP/IP</a>
+   <ul>
+      <li><a href="61_la_capa_de_acceso_a_red.html" class="daddy">6.1. La capa de acceso a red</a>
+      <ul class="other-section">
+         <li><a href="611_formato_de_tramas.html" class="no-ch">6.1.1. Formato de tramas</a></li>
+         <li><a href="612_direccin_mac.html" class="no-ch">6.1.2. Dirección MAC</a></li>
+      </ul>
+      </li>
+      <li><a href="62_la_capa_de_red_o_internet.html" class="daddy">6.2. La capa de red o Internet</a>
+      <ul class="other-section">
+         <li><a href="621_protocolo_ip.html" class="daddy">6.2.1. Protocolo IP</a>
+         <ul class="other-section">
+            <li><a href="6211_subredes.html" class="no-ch">6.2.1.1. Subredes</a></li>
+            <li><a href="6212_tabla_de_encaminamiento.html" class="no-ch">6.2.1.2. Tabla de encaminamiento</a></li>
+         </ul>
+         </li>
+         <li><a href="622_protocolo_arp.html" class="no-ch">6.2.2. Protocolo ARP</a></li>
+         <li><a href="623_protocolo_icmp.html" class="no-ch">6.2.3. Protocolo ICMP</a></li>
+      </ul>
+      </li>
+      <li><a href="63_la_capa_de_transporte.html" class="daddy">6.3. La capa de transporte</a>
+      <ul class="other-section">
+         <li><a href="631_protocolo_tcp.html" class="daddy">6.3.1. Protocolo TCP</a>
+         <ul class="other-section">
+            <li><a href="6311_formato_de_cabecera.html" class="no-ch">6.3.1.1. Formato de cabecera</a></li>
+            <li><a href="6312_puerto_lgico.html" class="no-ch">6.3.1.2. Puerto lógico</a></li>
+         </ul>
+         </li>
+         <li><a href="632_protocolo_udp.html" class="daddy">6.3.2. Protocolo UDP</a>
+         <ul class="other-section">
+            <li><a href="6321_formato_de_cabecera.html" class="no-ch">6.3.2.1. Formato de cabecera</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+      <li id="active"><a href="64_la_capa_de_aplicacin.html" class="active no-ch">6.4. La capa de aplicación</a></li>
+   </ul>
+   </li>
+   <li><a href="7_comparacin_entre_el_modelo_osi_y_el_modelo_tcpip.html" class="no-ch">7. Comparación entre el Modelo OSI y el Modelo TCP/IP</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="6321_formato_de_cabecera.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="7_comparacin_entre_el_modelo_osi_y_el_modelo_tcpip.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">6.4. La capa de aplicación</h1></header>
+<article class="iDevice_wrapper DestacadofpdIdevice" id="id68">
+<div class="iDevice emphasis0" >
+<div class="iDevice_destacadofpd">
+<div id="ta68_167" class="block iDevice_content">
+
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id126">
+<div class="iDevice emphasis0" >
+<div id="ta126_144_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">La capa de aplicación es la capa más alta en el modelo TCP/IP, donde ocurren las interacciones directas entre las aplicaciones del usuario y los servicios de red. Su principal función es ofrecer las interfaces y los protocolos que permiten que las aplicaciones utilicen la red para enviar y recibir datos. Aquí es donde se sitúan los protocolos que usamos todos los días, como HTTP, FTP, SMTP, DNS, entre otros.</p>
+<p style="text-align: justify;">La capa de aplicación facilita la comunicación entre procesos a través de la red, traduciendo las acciones del usuario en solicitudes a otros dispositivos o servidores. Los protocolos de esta capa gestionan la forma en la que las aplicaciones acceden a los servicios de red y cómo los datos se presentan al usuario. También se asegura de que los datos sean interpretados correctamente por la aplicación receptora.</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id127">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Funciones principales</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta127_145_2" class="block iDevice_content">
+<div class="exe-text"><ul>
+<li><strong>Comunicación entre aplicaciones</strong>: La capa de aplicación permite que dos aplicaciones en diferentes dispositivos se comuniquen entre sí. Por ejemplo, un navegador web en tu computadora (cliente) se comunica con un servidor web remoto para descargar una página web.</li>
+<li><strong>Interacción con la capa de transporte</strong>: Aunque la capa de aplicación no gestiona directamente los aspectos técnicos de la transmisión de datos (esto lo hace la capa de transporte con protocolos como TCP o UDP), sí utiliza los servicios proporcionados por ella. Los datos generados en la capa de aplicación se encapsulan en paquetes por la capa de transporte.</li>
+<li><strong>Control de la presentación de datos</strong>: Algunos protocolos en esta capa también se ocupan de cuestiones como la codificación y la presentación de los datos. Por ejemplo, en una transferencia FTP (File Transfer Protocol), se decide si los archivos se transfieren en formato binario o ASCII.</li>
+<li><strong>Proporciona protocolos específicos para servicios</strong>: Cada aplicación o servicio utiliza un protocolo específico para interactuar con la red. Estos protocolos están diseñados para cumplir con los requisitos de diferentes tipos de comunicación, como la transferencia de archivos, el envío de correos electrónicos o la navegación web.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id128">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Protocolos clave en la capa de aplicación</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta128_146_2" class="block iDevice_content">
+<div class="exe-text"><p>En esta capa hay una serie de protocolos muy conocidos, entre los protocolos más comunes que operan en la capa de aplicación:</p>
+<ul>
+<li><strong>HTTP (Hypertext Transfer Protocol)</strong>: Utilizado por navegadores web para recuperar información de servidores web. Es el protocolo principal para la navegación web y opera en el puerto 80 (HTTP) o 443 (HTTPS) para conexiones seguras.</li>
+<li><strong>FTP (File Transfer Protocol): </strong>Se utiliza para la transferencia de archivos entre un cliente y un servidor. Opera en el puerto 21 para establecer la conexión de control y en un rango de puertos para la transferencia de datos.</li>
+<li><strong>SMTP (Simple Mail Transfer Protocol)</strong>: Se utiliza para el envío de correos electrónicos desde un cliente de correo a un servidor de correo, o entre servidores de correo. Funciona principalmente en el puerto 25.</li>
+<li><strong>DNS (Domain Name System)</strong>: Traducir los nombres de dominio (por ejemplo, www.google.com) en direcciones IP que pueden ser utilizadas por los dispositivos de la red. Opera en el puerto 53, utilizando tanto TCP como UDP.</li>
+<li><strong>Telnet</strong>: Permite a los usuarios controlar remotamente un dispositivo en la red a través de una sesión interactiva de texto. Opera en el puerto 23, aunque ha sido reemplazado en muchos entornos por SSH debido a preocupaciones de seguridad.</li>
+<li><strong>SSH (Secure Shell)</strong>: Similar a Telnet, pero añade una capa de cifrado para garantizar la seguridad durante las conexiones remotas. Funciona en el puerto 22.</li>
+<li><strong>POP3/IMAP (Post Office Protocol/Internet Message Access Protocol)</strong>: Protocolos utilizados para la recuperación de correos electrónicos desde un servidor de correo hacia el cliente de correo. POP3 usa el puerto 110 y IMAP el puerto 143, aunque las versiones seguras POP3S e IMAPS utilizan los puertos 995 y 993 respectivamente.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id129">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Ejemplo práctico</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta129_147_2" class="block iDevice_content">
+<div class="exe-text"><p>Cuando usas tu navegador para acceder a una página web (por ejemplo, www.example.com), ocurre lo siguiente en la capa de aplicación:</p>
+<ol>
+<li>El navegador (una aplicación de usuario) realiza una solicitud HTTP para obtener el contenido de la página web. Esto implica enviar una solicitud GET al servidor que aloja el sitio.</li>
+<li>El navegador usa el DNS para traducir el nombre de dominio “www.example.com” a una dirección IP (por ejemplo, 192.168.1.10).</li>
+<li>Una vez obtenida la IP del servidor, la solicitud HTTP es enviada a la dirección IP del servidor a través del puerto 80 (HTTP) o 443 (HTTPS), usando TCP como protocolo de transporte.</li>
+<li>El servidor web responde enviando de vuelta los datos correspondientes a la página solicitada, y el navegador los presenta al usuario.</li>
+</ol></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper DebesconocerfpdIdevice em_iDevice em_iDevice_debesconocerfpd" id="id130">
+<div class="iDevice emphasis_debesconocerfpd" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Debes recordar</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta130_145" class="block iDevice_content">
+<p>La capa de aplicación es crucial porque es donde interactúan las aplicaciones que utilizamos en nuestra vida cotidiana. Es la parte del modelo TCP/IP más visible para los usuarios finales, ya que proporciona las interfaces y protocolos que facilitan el uso de la red. Sin los protocolos de la capa de aplicación, los usuarios no podrían acceder a servicios como el correo electrónico, la web o la transferencia de archivos.</p>
+<p><strong>Resumen</strong></p>
+<ul>
+<li>La capa de aplicación se encarga de proporcionar los protocolos que permiten a las aplicaciones comunicarse a través de la red.</li>
+<li>Facilita la interacción entre los procesos de red y las aplicaciones de los usuarios.</li>
+<li>Algunos de los protocolos más conocidos incluyen HTTP, FTP, SMTP, DNS, SSH, entre otros.</li>
+<li>A través de esta capa, los datos son preparados y enviados para ser transportados por las capas inferiores del modelo TCP/IP.</li>
+</ul>
+<p>Este nivel es donde la red cobra "vida" desde el punto de vista del usuario final, ya que maneja los servicios y aplicaciones que usamos todos los días.<br /> </p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="6321_formato_de_cabecera.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="7_comparacin_entre_el_modelo_osi_y_el_modelo_tcpip.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_adultos_js.js"></script></body></html>

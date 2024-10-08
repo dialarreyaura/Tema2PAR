@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>6.2.1. Protocolo IP | Tema 2 PAR </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Diana de Lara del Rey" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-28"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Tema 2 PAR</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Tema 2. Teoría de las comunicaciones. El modelo OSI. TCP/IP</a></li>
+   <li><a href="1_introduccin.html" class="no-ch">1. Introducción</a></li>
+   <li><a href="2_protocolos_de_comunicacin.html" class="daddy">2. Protocolos de Comunicación</a>
+   <ul class="other-section">
+      <li><a href="21_por_qu_importan_los_protocolos.html" class="no-ch">2.1. ¿Por Qué Importan los Protocolos?</a></li>
+      <li><a href="22_protocolos_de_red.html" class="no-ch">2.2. Protocolos de Red</a></li>
+   </ul>
+   </li>
+   <li><a href="3_funciones_de_la_comunicacin.html" class="no-ch">3. Funciones de la Comunicación</a></li>
+   <li><a href="4_arquitectura_de_comunicaciones.html" class="daddy">4. Arquitectura de Comunicaciones</a>
+   <ul class="other-section">
+      <li><a href="41_diseo_de_arquitectura_de_red.html" class="no-ch">4.1. Diseño de Arquitectura de Red</a></li>
+      <li><a href="42_caractersticas_de_las_arquitecturas_por_niveles.html" class="no-ch">4.2. Características de las Arquitecturas por Niveles</a></li>
+   </ul>
+   </li>
+   <li><a href="5_el_modelo_de_referencia_osi.html" class="daddy">5. El modelo de referencia OSI</a>
+   <ul class="other-section">
+      <li><a href="51_la_capa_fsica.html" class="no-ch">5.1. La capa física</a></li>
+      <li><a href="52_la_capa_de_enlace_de_datos.html" class="no-ch">5.2. La capa de enlace de Datos</a></li>
+      <li><a href="53_la_capa_de_red.html" class="no-ch">5.3. La capa de red</a></li>
+      <li><a href="54_la_capa_de_transporte.html" class="no-ch">5.4. La capa de transporte</a></li>
+      <li><a href="55_la_capa_de_sesin.html" class="no-ch">5.5. La capa de sesión</a></li>
+      <li><a href="56_la_capa_de_presentacin.html" class="no-ch">5.6. La capa de presentación</a></li>
+      <li><a href="57_la_capa_de_aplicacin.html" class="no-ch">5.7. La capa de aplicación</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="6_el_modelo_tcpip.html" class="current-page-parent daddy">6. El Modelo TCP/IP</a>
+   <ul>
+      <li><a href="61_la_capa_de_acceso_a_red.html" class="daddy">6.1. La capa de acceso a red</a>
+      <ul class="other-section">
+         <li><a href="611_formato_de_tramas.html" class="no-ch">6.1.1. Formato de tramas</a></li>
+         <li><a href="612_direccin_mac.html" class="no-ch">6.1.2. Dirección MAC</a></li>
+      </ul>
+      </li>
+      <li class="current-page-parent"><a href="62_la_capa_de_red_o_internet.html" class="current-page-parent daddy">6.2. La capa de red o Internet</a>
+      <ul>
+         <li id="active"><a href="621_protocolo_ip.html" class="active daddy">6.2.1. Protocolo IP</a>
+         <ul>
+            <li><a href="6211_subredes.html" class="no-ch">6.2.1.1. Subredes</a></li>
+            <li><a href="6212_tabla_de_encaminamiento.html" class="no-ch">6.2.1.2. Tabla de encaminamiento</a></li>
+         </ul>
+         </li>
+         <li><a href="622_protocolo_arp.html" class="no-ch">6.2.2. Protocolo ARP</a></li>
+         <li><a href="623_protocolo_icmp.html" class="no-ch">6.2.3. Protocolo ICMP</a></li>
+      </ul>
+      </li>
+      <li><a href="63_la_capa_de_transporte.html" class="daddy">6.3. La capa de transporte</a>
+      <ul class="other-section">
+         <li><a href="631_protocolo_tcp.html" class="daddy">6.3.1. Protocolo TCP</a>
+         <ul class="other-section">
+            <li><a href="6311_formato_de_cabecera.html" class="no-ch">6.3.1.1. Formato de cabecera</a></li>
+            <li><a href="6312_puerto_lgico.html" class="no-ch">6.3.1.2. Puerto lógico</a></li>
+         </ul>
+         </li>
+         <li><a href="632_protocolo_udp.html" class="daddy">6.3.2. Protocolo UDP</a>
+         <ul class="other-section">
+            <li><a href="6321_formato_de_cabecera.html" class="no-ch">6.3.2.1. Formato de cabecera</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+      <li><a href="64_la_capa_de_aplicacin.html" class="no-ch">6.4. La capa de aplicación</a></li>
+   </ul>
+   </li>
+   <li><a href="7_comparacin_entre_el_modelo_osi_y_el_modelo_tcpip.html" class="no-ch">7. Comparación entre el Modelo OSI y el Modelo TCP/IP</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="62_la_capa_de_red_o_internet.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="6211_subredes.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">6.2.1. Protocolo IP</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id76">
+<div class="iDevice emphasis0" >
+<div id="ta76_128_2" class="block iDevice_content">
+<div class="exe-text"><p>El Protocolo de Internet (IP) es la piedra angular de las comunicaciones en redes, encargándose del direccionamiento y el enrutamiento de paquetes de datos entre dispositivos a través de redes interconectadas, incluidas LANs (redes locales) e internet. Funciona en la capa de red del modelo TCP/IP y es responsable de enviar los paquetes desde el origen hasta su destino, asegurando que los datos puedan viajar a través de múltiples redes.</p>
+<p>El protocolo IP es sin conexión y no confiable por diseño, lo que significa que no garantiza la entrega de los paquetes ni asegura que lleguen en el mismo orden en que fueron enviados. Sin embargo, esta simplicidad y flexibilidad lo han convertido en el protocolo más utilizado en redes globales.</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id77">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Formato del datagrama IP</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta77_129_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">El datagrama IP es la unidad básica de datos que viaja a través de redes IP. Se trata de un conjunto de datos que incluye una cabecera con información de control y una carga útil, que contiene los datos reales. El formato del datagrama IP varía ligeramente entre las versiones de IP (IPv4 e IPv6), pero a continuación se describe el formato de un datagrama IPv4 típico, que ha sido el estándar dominante durante muchos años:</p>
+<p style="text-align: justify;"><strong>Cabecera del datagrama IP (IPv4)</strong><br />La cabecera IP es un bloque de datos de longitud fija (aunque puede extenderse con campos opcionales) que contiene toda la información necesaria para el enrutamiento y entrega del datagrama. La cabecera de un datagrama IPv4 tiene una longitud mínima de<strong> 20 bytes</strong> y está compuesta por varios campos:</p>
+<ul>
+<li style="text-align: justify;"><strong>Versión (4 bits):</strong> Indica la versión del protocolo IP. Para IPv4, este valor es 4.<br />Longitud de la cabecera (4 bits): Indica el tamaño de la cabecera en palabras de 32 bits (4 bytes). El valor mínimo es 5, lo que equivale a 20 bytes.</li>
+<li style="text-align: justify;"><strong>Tipo de servicio (ToS) o DSCP (8 bits)</strong>: Define la prioridad del paquete y el tipo de servicio que se espera. Puede utilizarse para dar preferencia a ciertos tipos de tráfico, como voz o video. De escasa utilidad en la actualidad. Su formato es:   
+<ul>
+<li style="text-align: justify;">
+<p><strong>PRIO</strong>: Se utiliza en casos de congestión.</p>
+</li>
+<li style="text-align: justify;">
+<p><strong>D</strong>: Dar prioridad al retardo.</p>
+</li>
+<li style="text-align: justify;">
+<p><strong>T</strong>: Dar prioridad al throughput (tasa de transferencia).</p>
+</li>
+<li style="text-align: justify;">
+<p><strong>R</strong>: Dar prioridad a la fiabilidad.</p>
+</li>
+<li style="text-align: justify;">
+<p><strong>C</strong>: Dar prioridad al coste.</p>
+</li>
+<li style="text-align: justify;">
+<p><strong>MBZ</strong>: Reservado para uso futuro. 1Bit.</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Normalmente solo se pondrá a 1 uno de los campos D,T,R,C. El usuario decidirá a que quiere dar prioridad</p>
+<ul>
+<li style="text-align: justify;"><strong>Longitud total (16 bits)</strong>: Especifica el tamaño total del datagrama, incluidas la cabecera y los datos. El tamaño máximo de un datagrama IP es de 65.535 bytes.</li>
+<li style="text-align: justify;">I<strong>dentificación (16 bits)</strong>: Un número único para identificar el datagrama. Se utiliza para fragmentar y reconstruir datagramas grandes.</li>
+<li style="text-align: justify;"><strong>Banderas (3 bits) y Desplazamiento de fragmentos (13 bits)</strong>: Estos campos controlan la fragmentación del datagrama si es demasiado grande para una red específica. La fragmentación divide el datagrama en partes más pequeñas. Tiene los subcampos:
+<ul>
+<li style="text-align: justify;"><strong>O</strong>: Reservado.</li>
+<li style="text-align: justify;"><strong>DF</strong> <strong>(Do not Fragment)</strong>:Cuando el bit es 0, si permite fragmentar, cuando es 1 no permite fragmentar el datagrama.</li>
+<li style="text-align: justify;"><strong>MF (More Fragments)</strong>: Cuando el bit es 1 quiere decir que se esperan mas fragmentos, y cuando el bit es 0, quiere decir que es el ultimo fragmento.</li>
+</ul>
+</li>
+<li style="text-align: justify;"><strong>Desplazamiento de Fragmento (OFFSET)</strong>: Número de fragmento dentro del datagrama. si pertenecen al mismo datagrama, el valor del campo <strong>IDENTIFICADOR</strong> sera el mismo.</li>
+<li style="text-align: justify;"><strong>Tiempo de vida (TTL, 8 bits)</strong>: Limita la vida útil de un paquete en la red, evitando que un paquete se enrolle indefinidamente en bucles de enrutamiento. Cada vez que el paquete pasa por un router, su TTL se reduce en 1. Cuando llega a 0, el paquete se descarta.</li>
+<li style="text-align: justify;"><strong>Protocolo (8 bits)</strong>: Identifica el protocolo de la capa de transporte que se utiliza (por ejemplo, TCP es el valor 6, UDP es el 17).</li>
+<li style="text-align: justify;"><strong>Checksum de la cabecera (16 bits)</strong>: Un valor de verificación utilizado para detectar errores en la cabecera del datagrama.</li>
+<li style="text-align: justify;"><strong>Dirección IP de origen (32 bits)</strong>: La dirección IP del dispositivo que envía el datagrama.</li>
+<li style="text-align: justify;"><strong>Dirección IP de destino (32 bits)</strong>: La dirección IP del dispositivo al que se dirige el datagrama.</li>
+<li style="text-align: justify;"><strong>Opciones (longitud variable)</strong>: Campo opcional que puede incluir información adicional, como registros de ruta o instrucciones de seguridad.</li>
+</ul>
+<p><strong>Carga útil del datagrama IP</strong></p>
+<p>Después de la cabecera, se encuentra la <strong>carga útil</strong>, que contiene los datos reales que deben ser transportados. En la mayoría de los casos, la carga útil es un segmento TCP o un datagrama UDP, aunque también puede ser otro tipo de información de red.</p>
+<p>Las tramas físicas (de Ethernet) tienen un campo de datos que incluyen y transportan los datagramas IP. La longitud de este campo de datos no es indefinida debido a que está limitado por el diseño de la red.</p>
+<p style="text-align: justify;">El MTU ( Maximum Transmission Unit) de una red es la mayor cantidad de datos que puede transportar su trama física.</p>
+<p style="text-align: justify;">En la versión 4 del protocolo IP, IPv4, si el paquete a transmitir supera el tamaño máximo negociado (MTU) en el tramo de red por el que va a circular, podrá ser dividido en paquetes más pequeños, y reensamblado luego cuando sea necesario.</p>
+<p style="text-align: justify;">Estos fragmentos podrán ir cada uno por un camino diferente dependiendo de la congestión de las rutas encada momento. Si uno de los fragmentos se pierde, todo el paquete original se considerará perdido, y los restantes fragmentos se descartarán. </p>
+<p style="text-align: justify;"><strong>IP</strong> no establece un <strong>MTU</strong> máximo, pero sí establece un MTU mínimo de <strong>576 bytes</strong> para su <strong>versión 4</strong> y <strong>1280</strong> <strong>bytes</strong> (menor que la de Ethernet) para su <strong>versión 6</strong>.</p>
+<p><img src="imagen.7.png" width="774" height="466" alt="datagrama Ip" style="display: block; margin-left: auto; margin-right: auto;" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id78">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Direccionamiento IP</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta78_130_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">El uso que se hace en la actualidad de las redes de datos impone la necesidad de un mecanismo de identificación unívoca de todas las máquinas de la red, independientemente de la tecnología del nivel de enlace de cada una.</p>
+<p style="text-align: justify;">Las <strong>direcciones IP</strong> son esenciales para el funcionamiento del protocolo IP, ya que identifican de manera <strong>única</strong> a cada dispositivo conectado a una red. Las direcciones IP pueden variar en formato y longitud según la versión del protocolo, pero todas cumplen con la misma función básica: <em><strong>identificar el origen y destino de los datagramas IP.</strong></em></p>
+<p style="text-align: justify;">El nivel de red es el encargado de asignar direcciones a todas las máquinas de la red. Dicha dirección IP es el identificador de cada host dentro de su red.</p>
+<p style="text-align: justify;">Cada host conectado a una red tiene una dirección IP asignada, la cual debe ser distinta a todas las demás direcciones que estén vigentes en ese momento en el conjunto de redes visibles por el host.<br />Se utiliza el término host como equipo conectado a la red aunque se debería hablar de <strong>interfaz de red,</strong> que es lo que realmente conecta con la red. Cada interfaz físico conectado a Internet tiene asignada una dirección IP.</p>
+<p style="text-align: justify;">Un host puede tener más de una interfaz de red, normalmente para conectar a redes diferentes.<br />En el caso de Internet, no puede haber dos ordenadores con 2 direcciones IP (públicas) iguales. Pero sí podríamos tener dos ordenadores con la misma dirección IP siempre y cuando pertenezcan a redes independientes entre sí (sin ningún camino posible que las comunique).</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id79">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Rango de direcciones</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta79_131_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">El rango de direcciones IP se refiere a los bloques de direcciones que pueden ser asignadas a dispositivos para que puedan comunicarse en una red utilizando el Protocolo de Internet (IP). Estos rangos están organizados de acuerdo con varias características, como la clase de la dirección y si las direcciones son públicas o privadas.</p>
+<p style="text-align: justify;">Las direcciones IP pueden clasificarse principalmente en dos tipos:</p>
+<ol style="text-align: justify;">
+<li><strong>Direcciones IP públicas</strong>, que son enrutables en internet.</li>
+<li><strong>Direcciones IP privadas</strong>, que solo son válidas dentro de redes locales o privadas.</li>
+</ol>
+<p style="text-align: justify;"><strong>Direcciones IPv4</strong><br />El espacio de direcciones IPv4 se basa en un rango de 32 bits, lo que significa que hay aproximadamente 4.294.967.296 (2^32) direcciones posibles. Estas direcciones se dividen en varios rangos, o bloques, algunos de los cuales son reservados para usos específicos, como las redes privadas, mientras que otros son asignados a dispositivos en internet a través de autoridades como <strong>IANA</strong> (Internet Assigned Numbers Authority).</p>
+<p style="text-align: justify;"><strong>Clases de direcciones IPv4</strong></p>
+<p style="text-align: justify;">El sistema de direcciones IPv4 se divide en varias clases, que históricamente fueron usadas para asignar direcciones IP a diferentes tipos de redes según su tamaño. Las clases se definen por el valor de los bits más significativos de la dirección IP.</p>
+<p style="text-align: justify;"><strong>Clase A</strong> (0.0.0.0 – 127.255.255.255):</p>
+<p style="text-align: justify;"><strong>Primer octeto: 0-127</strong><br />Usada para redes muy grandes, con hasta 16 millones de hosts posibles por red.<br /><strong>Direcciones de red:</strong> Los primeros 8 bits (primer octeto) corresponden a la parte de la red, dejando los 24 bits restantes para los hosts.<br />Ejemplo: 10.0.0.1<br /><strong>Rango privado</strong>: 10.0.0.0 – 10.255.255.255</p>
+<p style="text-align: justify;"><strong>Clase B</strong> (128.0.0.0 – 191.255.255.255):</p>
+<p style="text-align: justify;"><strong>Primer octeto: 128-191</strong><br />Usada para redes medianas, con hasta 65.536 hosts por red.<br /><strong>Direcciones de red</strong>: Los primeros 16 bits corresponden a la parte de la red, mientras que los 16 bits restantes corresponden a los hosts.<br />Ejemplo: 172.16.0.1<br /><strong>Rango privado</strong>: 172.16.0.0 – 172.31.255.255</p>
+<p style="text-align: justify;"><strong>Clase C </strong>(192.0.0.0 – 223.255.255.255):</p>
+<p style="text-align: justify;"><strong>Primer octeto: 192-223</strong><br />Usada para redes pequeñas, con hasta 256 hosts por red.<br /><strong>Direcciones de red</strong>: Los primeros 24 bits corresponden a la red, mientras que los 8 bits restantes son para los hosts.<br />Ejemplo: 192.168.0.1<br /><strong>Rango privado</strong>: 192.168.0.0 – 192.168.255.255</p>
+<p style="text-align: justify;"><strong>Clase D</strong> (224.0.0.0 – 239.255.255.255):</p>
+<p style="text-align: justify;">Usada para multicast, es decir, para la transmisión de datos a un grupo de hosts en lugar de un solo destinatario. No se utiliza para direccionar hosts individuales.</p>
+<p style="text-align: justify;"><strong>Clase E</strong> (240.0.0.0 – 255.255.255.255):</p>
+<p style="text-align: justify;">Reservada para fines experimentales y no se usa para el tráfico regular en internet.</p>
+<p style="text-align: justify;"><strong>Direcciones IPv4 privadas</strong></p>
+<p style="text-align: justify;">Las direcciones privadas son aquellas que están reservadas para uso dentro de redes locales (LAN) y <strong>no</strong> son <strong>enrutables</strong> en internet. Estas direcciones se utilizan comúnmente en redes corporativas, hogares, y otras redes internas. La razón principal por la cual se utilizan direcciones privadas es la limitación del espacio de direcciones IPv4 públicas, lo que llevó a la implementación de tecnologías como NAT (Network Address Translation) para permitir que múltiples dispositivos dentro de una red local compartan una sola dirección IP pública al interactuar con internet.</p>
+<p style="text-align: justify;">Los rangos reservados para direcciones IPv4 privadas, según la<strong> RFC 1918</strong>, son:</p>
+<p style="text-align: justify;"><strong>Clase A privada</strong>:</p>
+<p style="text-align: justify;"><strong>Rango: 10.0.0.0 – 10.255.255.255</strong><br />Tamaño: 16 millones de direcciones posibles.<br />Usos típicos: Grandes redes privadas, como las de grandes empresas.</p>
+<p style="text-align: justify;"><strong>Clase B privada:</strong></p>
+<p style="text-align: justify;"><strong>Rango: 172.16.0.0 – 172.31.255.255</strong><br />Tamaño: 1 millón de direcciones posibles.<br />Usos típicos: Redes privadas de tamaño medio.</p>
+<p style="text-align: justify;"><strong>Clase C privada:</strong></p>
+<p style="text-align: justify;"><strong>Rango: 192.168.0.0 – 192.168.255.255</strong><br />Tamaño: 65.536 direcciones posibles.<br />Usos típicos: Redes pequeñas, como redes domésticas o de pequeñas empresas.<br />Las direcciones IP privadas no pueden ser enrutadas directamente en internet. Para que los dispositivos con direcciones privadas accedan a internet, los routers utilizan NAT, que traduce las direcciones IP privadas en una dirección IP pública.</p>
+<p style="text-align: justify;"><strong>Direcciones IPv4 públicas</strong><br />Las direcciones públicas son las que se utilizan para identificar dispositivos accesibles a través de internet. Estas direcciones deben ser únicas y son asignadas por una autoridad central, como <strong>IANA</strong> o los <strong>RIRs</strong> <strong>(Regional Internet Registries)</strong>, que gestionan la asignación de bloques de direcciones IP en regiones específicas del mundo.</p>
+<p style="text-align: justify;"><strong>Direcciones públicas IPv4</strong>: Son aquellas que no están dentro de los rangos reservados para uso privado (RFC 1918) ni para propósitos especiales.<br />Por ejemplo: 8.8.8.8 (una dirección pública del DNS de Google).<br />Las direcciones públicas deben ser globalmente únicas para evitar conflictos en las redes mundiales.</p>
+<p style="text-align: justify;"><strong>Problema de agotamiento de direcciones IPv4</strong><br />A medida que el uso de internet creció exponencialmente, el espacio de direcciones IPv4 se fue agotando rápidamente, lo que llevó a la introducción de soluciones temporales, como el uso generalizado de NAT, y finalmente al desarrollo de IPv6, una nueva versión del Protocolo de Internet con un espacio de direccionamiento mucho mayor.</p>
+<p style="text-align: justify;"></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id81">
+<div class="iDevice emphasis0" >
+<div id="ta81_133_2" class="block iDevice_content">
+
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id133">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Direcciones IPv6</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta133_151_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">IPv6 fue diseñado para reemplazar a IPv4 debido al problema de agotamiento de las direcciones. IPv6 tiene un espacio de 128 bits, lo que significa que soporta aproximadamente 340 sextillones de direcciones posibles, una cantidad mucho mayor que IPv4. Las direcciones IPv6 se representan en formato hexadecimal y están separadas por dos puntos.</p>
+<p style="text-align: justify;">Ejemplo de una dirección IPv6: 2001:0db8:85a3:0000:0000:8a2e:0370:7334</p>
+<p style="text-align: justify;">En IPv6, no se utiliza el concepto de clases como en IPv4, y en su lugar, se utilizan prefijos para definir la parte de la red y la parte del host. Sin embargo, al igual que en IPv4, IPv6 tiene rangos reservados para diferentes propósitos:</p>
+<ul>
+<li style="text-align: justify;"><strong>Direcciones unicast globales</strong>: Usadas para identificar dispositivos en internet, de manera similar a las direcciones IPv4 públicas.</li>
+<li style="text-align: justify;"><strong>Direcciones link-local</strong>: Usadas para comunicación dentro de una red local, como la configuración automática de dispositivos en la misma red.</li>
+<li style="text-align: justify;"><strong>Direcciones multicast</strong>: Usadas para enviar paquetes a múltiples destinos al mismo tiempo, lo que es útil en redes de gran escala.</li>
+<li style="text-align: justify;"><strong>Direcciones anycast</strong>: Permiten que un paquete sea entregado al dispositivo más cercano de un grupo de destinatarios, algo útil en servicios distribuidos como los DNS.</li>
+</ul>
+<p><strong>Rangos especiales en IPv4 y IPv6</strong><br />Además de las direcciones privadas y públicas, tanto IPv4 como IPv6 tienen ciertos rangos reservados para usos especiales:</p>
+<ul>
+<li style="text-align: justify;"><strong>Dirección de loopback</strong> (IPv4: 127.0.0.1, IPv6: ::1): Usada para que un dispositivo se comunique consigo mismo. Esto es útil en pruebas de red y diagnósticos.</li>
+<li style="text-align: justify;"><strong>Direcciones de enlace-local</strong> (IPv4: 169.254.0.0/16, IPv6: fe80::/10): Utilizadas para comunicaciones locales dentro de una red, cuando no hay un servidor DHCP disponible para asignar una dirección IP.</li>
+</ul>
+<p style="text-align: justify;">A su vez, las direcciones IP pueden ser:</p>
+<ul>
+<li style="text-align: justify;"><strong>Direcciones IP estáticas</strong> (fijas): Un host que se conecte a la red con dirección IP estática siempre lo hará con una misma IP. Las direcciones IP públicas estáticas son las que utilizan los servidores de Internet con objeto de que estén siempre localizables por los usuarios de Internet. Estas direcciones hay que contratarlas.</li>
+<li style="text-align: justify;"><strong>Direcciones IP dinámicas</strong>: Un host que se conecte a la red mediante dirección IP dinámica, cada vez lo hará con una dirección IP distinta. Las direcciones IP públicas dinámicas son las que se utilizan en las conexiones a Internet mediante un módem/cable-módem/router. Los proveedores de Internet utilizan direcciones IP dinámicas debido a que tienen más clientes que direcciones IP (es muy improbable que todos se conecten a la vez).</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="62_la_capa_de_red_o_internet.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="6211_subredes.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_adultos_js.js"></script></body></html>

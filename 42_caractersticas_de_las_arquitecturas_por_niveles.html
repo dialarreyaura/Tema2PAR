@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>4.2. Características de las Arquitecturas por Niveles | Tema 2 PAR </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Diana de Lara del Rey" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-12"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Tema 2 PAR</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Tema 2. Teoría de las comunicaciones. El modelo OSI. TCP/IP</a></li>
+   <li><a href="1_introduccin.html" class="no-ch">1. Introducción</a></li>
+   <li><a href="2_protocolos_de_comunicacin.html" class="daddy">2. Protocolos de Comunicación</a>
+   <ul class="other-section">
+      <li><a href="21_por_qu_importan_los_protocolos.html" class="no-ch">2.1. ¿Por Qué Importan los Protocolos?</a></li>
+      <li><a href="22_protocolos_de_red.html" class="no-ch">2.2. Protocolos de Red</a></li>
+   </ul>
+   </li>
+   <li><a href="3_funciones_de_la_comunicacin.html" class="no-ch">3. Funciones de la Comunicación</a></li>
+   <li class="current-page-parent"><a href="4_arquitectura_de_comunicaciones.html" class="current-page-parent daddy">4. Arquitectura de Comunicaciones</a>
+   <ul>
+      <li><a href="41_diseo_de_arquitectura_de_red.html" class="no-ch">4.1. Diseño de Arquitectura de Red</a></li>
+      <li id="active"><a href="42_caractersticas_de_las_arquitecturas_por_niveles.html" class="active no-ch">4.2. Características de las Arquitecturas por Niveles</a></li>
+   </ul>
+   </li>
+   <li><a href="5_el_modelo_de_referencia_osi.html" class="daddy">5. El modelo de referencia OSI</a>
+   <ul class="other-section">
+      <li><a href="51_la_capa_fsica.html" class="no-ch">5.1. La capa física</a></li>
+      <li><a href="52_la_capa_de_enlace_de_datos.html" class="no-ch">5.2. La capa de enlace de Datos</a></li>
+      <li><a href="53_la_capa_de_red.html" class="no-ch">5.3. La capa de red</a></li>
+      <li><a href="54_la_capa_de_transporte.html" class="no-ch">5.4. La capa de transporte</a></li>
+      <li><a href="55_la_capa_de_sesin.html" class="no-ch">5.5. La capa de sesión</a></li>
+      <li><a href="56_la_capa_de_presentacin.html" class="no-ch">5.6. La capa de presentación</a></li>
+      <li><a href="57_la_capa_de_aplicacin.html" class="no-ch">5.7. La capa de aplicación</a></li>
+   </ul>
+   </li>
+   <li><a href="6_el_modelo_tcpip.html" class="daddy">6. El Modelo TCP/IP</a>
+   <ul class="other-section">
+      <li><a href="61_la_capa_de_acceso_a_red.html" class="daddy">6.1. La capa de acceso a red</a>
+      <ul class="other-section">
+         <li><a href="611_formato_de_tramas.html" class="no-ch">6.1.1. Formato de tramas</a></li>
+         <li><a href="612_direccin_mac.html" class="no-ch">6.1.2. Dirección MAC</a></li>
+      </ul>
+      </li>
+      <li><a href="62_la_capa_de_red_o_internet.html" class="daddy">6.2. La capa de red o Internet</a>
+      <ul class="other-section">
+         <li><a href="621_protocolo_ip.html" class="daddy">6.2.1. Protocolo IP</a>
+         <ul class="other-section">
+            <li><a href="6211_subredes.html" class="no-ch">6.2.1.1. Subredes</a></li>
+            <li><a href="6212_tabla_de_encaminamiento.html" class="no-ch">6.2.1.2. Tabla de encaminamiento</a></li>
+         </ul>
+         </li>
+         <li><a href="622_protocolo_arp.html" class="no-ch">6.2.2. Protocolo ARP</a></li>
+         <li><a href="623_protocolo_icmp.html" class="no-ch">6.2.3. Protocolo ICMP</a></li>
+      </ul>
+      </li>
+      <li><a href="63_la_capa_de_transporte.html" class="daddy">6.3. La capa de transporte</a>
+      <ul class="other-section">
+         <li><a href="631_protocolo_tcp.html" class="daddy">6.3.1. Protocolo TCP</a>
+         <ul class="other-section">
+            <li><a href="6311_formato_de_cabecera.html" class="no-ch">6.3.1.1. Formato de cabecera</a></li>
+            <li><a href="6312_puerto_lgico.html" class="no-ch">6.3.1.2. Puerto lógico</a></li>
+         </ul>
+         </li>
+         <li><a href="632_protocolo_udp.html" class="daddy">6.3.2. Protocolo UDP</a>
+         <ul class="other-section">
+            <li><a href="6321_formato_de_cabecera.html" class="no-ch">6.3.2.1. Formato de cabecera</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+      <li><a href="64_la_capa_de_aplicacin.html" class="no-ch">6.4. La capa de aplicación</a></li>
+   </ul>
+   </li>
+   <li><a href="7_comparacin_entre_el_modelo_osi_y_el_modelo_tcpip.html" class="no-ch">7. Comparación entre el Modelo OSI y el Modelo TCP/IP</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="41_diseo_de_arquitectura_de_red.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="5_el_modelo_de_referencia_osi.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">4.2. Características de las Arquitecturas por Niveles</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id14">
+<div class="iDevice emphasis0" >
+<div id="ta14_134_2" class="block iDevice_content">
+<div class="exe-text"><p>Las redes se organizan en capas o niveles para reducir la complejidad de su diseño (metodología divide y vencerás). Cada una de estas capas o subniveles se construye sobre su predecesor, utilizando los servicios y funciones diseñados en él, siendo a su vez responsable de ofrecer servicios a niveles superiores.</p>
+<p>Cada nivel ofrecerá diferentes servicios que podrán ser elegidos por las capas superiores en función de la labor a realizar.</p>
+<p>La arquitectura por niveles constituye, y también se le denomina así, una jerarquía de protocolos.</p>
+<p>Los fabricantes de software/hardware deberán ajustarse a estos protocolos si quieren desarrollar productos compatibles con la arquitectura correspondiente.</p>
+<p><img src="imagen.png" width="765" height="372" alt="Arquitectura capas" style="display: block; margin-left: auto; margin-right: auto;" /></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id15">
+<div class="iDevice emphasis0" >
+<div id="ta15_135_2" class="block iDevice_content">
+<div class="exe-text"><p>Una jerarquía de protocolos se basa en las siguientes reglas:</p>
+<ul>
+<li>Cada nivel dispone de un conjunto de servicios.</li>
+<li>Los servicios están definidos mediante protocolos estándares.</li>
+<li>Cada nivel se comunica únicamente con el nivel inmediatamente superior y con el nivel inmediatamente inferior.</li>
+<li>Cada uno de los niveles inferiores proporciona servicios a su nivel.</li>
+<li>La comunicación de dos ordenadores que usan la misma arquitectura de red implica que los protocolos que se encuentran al mismo nivel de la jerarquía en cada uno de los equipos deben coordinar la comunicación.</li>
+<li>En general, el nivel n de una máquina se comunica de forma indirecta con el nivel n homónimo de la otra máquina.
+<ul>
+<li>Las reglas y convenciones utilizadas en esa comunicación se conocen como protocolo de nivel n.</li>
+<li>A los elementos activos de cada capa se le llama entidades o procesos y son estos los que se comunican mediante el uso del protocolo.</li>
+<li>Al grupo formado por las entidades o procesos de máquinas diferentes que están al mismo nivel se le llama entidades pares o procesos pares.</li>
+</ul>
+</li>
+</ul>
+<p>El modelo de arquitectura por niveles necesita información adicional para que los procesos pares puedan comunicarse a un determinado nivel. Estos datos adicionales dependen del protocolo utilizado y sólo se conoce su verdadero significado a ese nivel. Normalmente, los niveles inferiores los tratan como si fuera información propiamente dicha. A este añadido se le llama generalmente cabecera o información de control y suele ir al principio o al final de cada mensaje.</p>
+<p>En arquitecturas de redes reales se comprobará que todas las capas añaden cabeceras de control y todas ellas dependen del protocolo usado a ese nivel. La última capa no suele añadir información adicional porque se encarga de transmitir la información por el medio físico</p>
+<p><img src="imagen.1.png" width="858" height="465" alt="TxRx" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p></p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id16">
+<div class="iDevice emphasis0" >
+<div id="ta16_136_2" class="block iDevice_content">
+<div class="exe-text"><p>Podría parecer que en la transmisión de un mensaje se necesita el envío de una gran cantidad de información.</p>
+<p>Sin embargo, no es mucho mayor que en las arquitecturas sin niveles.</p>
+<p>La razón es porque cada capa realiza una función diferente y necesita de una cabecera distinta, motivo que puede ocasionar duplicidad de información en cabeceras.</p>
+<p>En una arquitectura de red, las entidades de la capa n implementan un determinado servicio que usa la capa n+1. A la capa n se le llama proveedor del servicio y a la capa n+1 usuario del servicio.</p>
+<p>A los servicios de una capa se accede a través de un SAP (Service Access Point o Punto de Acceso al Servicio).</p>
+<p>Los SAP de la capa n son las “puertas” por las que las entidades de la capa n+1 tienen acceso a los servicios e intercambian información.</p>
+<p>Cada SAP es una dirección o punto de entrada y normalmente es un número que lo identifica de manera única.</p>
+<p>Cuando una entidad de la capa n desea enviar información a su entidad par de la otra máquina, lo que hace es llamar al servicio correspondiente de la capa inferior a ésta (n-1) entregándole los datos que desea enviar.</p>
+<p>Esta llamada se realiza a través de un punto de acceso al servicio (SAP) y, normalmente, está definida por un conjunto de reglas que hay que cumplir, llamadas interfaz.</p>
+<p>Esto supone la inclusión en el mensaje de un conjunto de datos (información de control) que no se utiliza ni por la entidad par ni por ninguna otra capa. Sólo es usada por la capa n-1, que después de su procesamiento, la desecha.</p></div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="41_diseo_de_arquitectura_de_red.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="5_el_modelo_de_referencia_osi.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_adultos_js.js"></script></body></html>

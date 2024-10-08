@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>6.2.1.1. Subredes | Tema 2 PAR </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Diana de Lara del Rey" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-32"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Tema 2 PAR</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Tema 2. Teoría de las comunicaciones. El modelo OSI. TCP/IP</a></li>
+   <li><a href="1_introduccin.html" class="no-ch">1. Introducción</a></li>
+   <li><a href="2_protocolos_de_comunicacin.html" class="daddy">2. Protocolos de Comunicación</a>
+   <ul class="other-section">
+      <li><a href="21_por_qu_importan_los_protocolos.html" class="no-ch">2.1. ¿Por Qué Importan los Protocolos?</a></li>
+      <li><a href="22_protocolos_de_red.html" class="no-ch">2.2. Protocolos de Red</a></li>
+   </ul>
+   </li>
+   <li><a href="3_funciones_de_la_comunicacin.html" class="no-ch">3. Funciones de la Comunicación</a></li>
+   <li><a href="4_arquitectura_de_comunicaciones.html" class="daddy">4. Arquitectura de Comunicaciones</a>
+   <ul class="other-section">
+      <li><a href="41_diseo_de_arquitectura_de_red.html" class="no-ch">4.1. Diseño de Arquitectura de Red</a></li>
+      <li><a href="42_caractersticas_de_las_arquitecturas_por_niveles.html" class="no-ch">4.2. Características de las Arquitecturas por Niveles</a></li>
+   </ul>
+   </li>
+   <li><a href="5_el_modelo_de_referencia_osi.html" class="daddy">5. El modelo de referencia OSI</a>
+   <ul class="other-section">
+      <li><a href="51_la_capa_fsica.html" class="no-ch">5.1. La capa física</a></li>
+      <li><a href="52_la_capa_de_enlace_de_datos.html" class="no-ch">5.2. La capa de enlace de Datos</a></li>
+      <li><a href="53_la_capa_de_red.html" class="no-ch">5.3. La capa de red</a></li>
+      <li><a href="54_la_capa_de_transporte.html" class="no-ch">5.4. La capa de transporte</a></li>
+      <li><a href="55_la_capa_de_sesin.html" class="no-ch">5.5. La capa de sesión</a></li>
+      <li><a href="56_la_capa_de_presentacin.html" class="no-ch">5.6. La capa de presentación</a></li>
+      <li><a href="57_la_capa_de_aplicacin.html" class="no-ch">5.7. La capa de aplicación</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="6_el_modelo_tcpip.html" class="current-page-parent daddy">6. El Modelo TCP/IP</a>
+   <ul>
+      <li><a href="61_la_capa_de_acceso_a_red.html" class="daddy">6.1. La capa de acceso a red</a>
+      <ul class="other-section">
+         <li><a href="611_formato_de_tramas.html" class="no-ch">6.1.1. Formato de tramas</a></li>
+         <li><a href="612_direccin_mac.html" class="no-ch">6.1.2. Dirección MAC</a></li>
+      </ul>
+      </li>
+      <li class="current-page-parent"><a href="62_la_capa_de_red_o_internet.html" class="current-page-parent daddy">6.2. La capa de red o Internet</a>
+      <ul>
+         <li class="current-page-parent"><a href="621_protocolo_ip.html" class="current-page-parent daddy">6.2.1. Protocolo IP</a>
+         <ul>
+            <li id="active"><a href="6211_subredes.html" class="active no-ch">6.2.1.1. Subredes</a></li>
+            <li><a href="6212_tabla_de_encaminamiento.html" class="no-ch">6.2.1.2. Tabla de encaminamiento</a></li>
+         </ul>
+         </li>
+         <li><a href="622_protocolo_arp.html" class="no-ch">6.2.2. Protocolo ARP</a></li>
+         <li><a href="623_protocolo_icmp.html" class="no-ch">6.2.3. Protocolo ICMP</a></li>
+      </ul>
+      </li>
+      <li><a href="63_la_capa_de_transporte.html" class="daddy">6.3. La capa de transporte</a>
+      <ul class="other-section">
+         <li><a href="631_protocolo_tcp.html" class="daddy">6.3.1. Protocolo TCP</a>
+         <ul class="other-section">
+            <li><a href="6311_formato_de_cabecera.html" class="no-ch">6.3.1.1. Formato de cabecera</a></li>
+            <li><a href="6312_puerto_lgico.html" class="no-ch">6.3.1.2. Puerto lógico</a></li>
+         </ul>
+         </li>
+         <li><a href="632_protocolo_udp.html" class="daddy">6.3.2. Protocolo UDP</a>
+         <ul class="other-section">
+            <li><a href="6321_formato_de_cabecera.html" class="no-ch">6.3.2.1. Formato de cabecera</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+      <li><a href="64_la_capa_de_aplicacin.html" class="no-ch">6.4. La capa de aplicación</a></li>
+   </ul>
+   </li>
+   <li><a href="7_comparacin_entre_el_modelo_osi_y_el_modelo_tcpip.html" class="no-ch">7. Comparación entre el Modelo OSI y el Modelo TCP/IP</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="621_protocolo_ip.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="6212_tabla_de_encaminamiento.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">6.2.1.1. Subredes</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id83">
+<div class="iDevice emphasis0" >
+<div id="ta83_135_2" class="block iDevice_content">
+<div class="exe-text"><p>Una subred es una subdivisión lógica de una red IP más grande. Las subredes permiten organizar eficientemente una red, mejorar la seguridad y reducir la congestión de tráfico. Para crear una subred, se utiliza una máscara de subred que divide una dirección IP en dos partes: la porción de red y la porción de host.</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id82">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Asignación de IP's</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta82_134_2" class="block iDevice_content">
+<div class="exe-text"><p>Una organización adquiere una (o más) direcciones de clase, y el administrador local de la organización reparte la dirección de clase entre todas sus máquinas. En ocasiones, el identificador de host resulta demasiado largo, lo que da lugar a demasiadas máquinas dentro de la misma red (sobre todo con redes de clase A y B).</p>
+<p>Por ejemplo, con una dirección de clase A son posibles 2^24 máquinas dentro de esa red.</p>
+<p>Puede que al administrador de red, por razones topológicas o administrativas, le interese crear varias subredes.</p>
+<p>El identificador de host se puede dividir para separar las máquinas en diferentes subredes, obteniendo así:</p>
+<p>Nuevo identificador de red.<br />Nuevo identificador de host.<br />Ejemplo:</p>
+<p>Supongamos que se ha adquirido la dirección 100.0.0.0, de clase A, y que existen 3 departamentos diferentes en la empresa que interesaría separar en subredes distintas.</p>
+<p>Se pueden utilizar 8 bits del identificador de host, que originalmente tenía 24 bits, para crear un nuevo identificador de red y un nuevo identificador de host.</p>
+<p style="text-align: center;"><img src="imagen.8.png" width="778" height="427" alt="redes" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id84">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Máscaras de Subred.</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta84_136_2" class="block iDevice_content">
+<div class="exe-text"><p>Una máscara de subred es aquella dirección que enmascarando nuestra dirección IP, nos indica si otra dirección IP pertenece a nuestra subred o no.</p>
+<p>Si expresamos la máscara de subred de clase A en notación binaria, tenemos:</p>
+<p style="text-align: center;"><strong>11111111.00000000.00000000.00000000</strong></p>
+<ul>
+<li>Los unos indican los bits de la dirección correspondientes a la red y los ceros, los correspondientes al host. Según la máscara anterior, el primer byte (8 bits) es la red y los tres siguientes (24 bits), el host.</li>
+<li>Por ejemplo, la dirección de clase A 35.120.73.5 pertenece a la red 35.0.0.0</li>
+</ul>
+<p>Para saber si una <strong>dirección IP</strong> pertenece a una red, cada máquina realiza el producto lógico binario (<strong>AND</strong>) entre esa IP y la máscara, devolviendo la dirección de red.</p>
+<p>Al hacer el producto binario de las dos primeras direcciones (donde hay dos 1 en las mismas posiciones da como resultado un 1 y en caso contrario, un 0) obtenemos la tercera.</p>
+<p>Aplicando lo mismo a otro host, por ejemplo el que tiene dirección IP 192.168.1.89, se obtiene la misma dirección de subred. Esto significa que ambas máquinas se encuentran en la misma subred (la subred192.168.1.0).</p>
+<p>En cambio, al tomar la 192.168.2.25, se observa que no pertenece a la misma subred que las anteriores (pertenecerá a la 192.168.2.0)</p>
+<p style="text-align: center;"><img src="imagen.9.png" width="567" height="216" alt="máscaras" /></p>
+<p>La operación puede realizarse de forma inmediata:</p>
+<ul>
+<li>Si el byte de la máscara es 255 → el byte de la dirección se repite.</li>
+<li>Si el byte de la máscara es 0 → el byte de la dirección es 0.</li>
+<li>La parte de red se deja igual y la parte de host se deja a 0.</li>
+</ul>
+<p>Para calcular la dirección de difusión, hay que hacer la suma lógica en binario (OR) de la IP con el inverso (NOT) de su máscara.<br />Dirección de difusión = (dirección IP) OR (NOT (Máscara de subred))</p>
+<p><img src="imagen.10.png" width="662" height="262" alt="red" style="display: block; margin-left: auto; margin-right: auto;" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id85">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Necesidad de subredes</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta85_120_2" class="block iDevice_content">
+<div class="exe-text"><p>En una red TCP/IP no pueden haber hosts aislados: todos pertenecen a alguna red y todos tienen una dirección IP y una máscara de subred (si no se especifica se toma la máscara que corresponda a su clase).<br />Mediante la máscara un equipo de la red sabe si otro equipo se encuentra en su misma subred o en otra distinta. Entonces, si desea enviar un mensaje:</p>
+<ul>
+<li>Si el host pertenece a su misma subred, el mensaje se entregará directamente.</li>
+<li>En cambio, si los equipos se encuentran en redes distintas, el mensaje se enviará a la puerta de salida o router de la red del host origen. Este router pasará el mensaje al siguiente de la cadena y así sucesivamente hasta que se alcance la red del host destino y se complete la entrega del mensaje.</li>
+</ul>
+<p>Desde el punto de vista de un host el mundo se divide en dos partes:</p>
+<ul>
+<li>sus vecinos (los que tienen el mismo prefijo)</li>
+<li>y el resto del mundo. Con sus vecinos habla directamente, con los demás lo hace a través del router.</li>
+</ul>
+<p>La dirección IP de su propia red con la que conectan los equipos que desean enviar un mensaje al exterior y que coincide con la interfaz de red que el router muestra a esta red se denomina Default Gateway o Puerta de Enlace.</p>
+<p>Una dirección IP en su<strong> versión 4</strong> tiene 32 bits, de lo cuales, una parte indica la dirección de red y la otra parte indica la dirección de host dentro de esa red. Esto implica una jerarquía en el direccionamiento IP.</p>
+<p>Para alcanzar un host en Internet, primero se debe buscar la red a la que pertenece y después se debe buscar el host dentro de la red. Esto implica que las direcciones IP de cualquier clase están diseñadas con dos niveles de jerarquía.<br />Con este esquema, cualquier organización se encuentra limitada a dos niveles de jerarquía, las estaciones no pueden organizarse en grupos y todas están al mismo nivel.<br />Una solución a este problema es la creación de subredes, que consiste en una división de la red en redes más pequeñas conectadas entre sí por uno o mas routers.</p>
+<p><img src="imagen.11.png" width="433" height="208" alt="subr" style="display: block; margin-left: auto; margin-right: auto;" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id88">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">División de una Red IPv4 en Subredes</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta88_121_2" class="block iDevice_content">
+<div class="exe-text"><p>Es necesario segmentar las redes grandes en subredes más pequeñas, con lo que se crean grupos más pequeños de dispositivos y servicios con los siguientes fines:Controlar el tráfico mediante la contención del tráfico de broadcast dentro de la subred.<br />Reducir el tráfico general de la red y mejorar el rendimiento de ésta<br />División en subredes: proceso de segmentación de una red en varios espacios de red más pequeños o subredes.<br />Comunicación entre subredes: Se necesita un router para que los dispositivos en diferentes redes y subredes puedan comunicarse.Cada interfaz del router debe tener una dirección de host IPv4 que pertenezca a la red o a la subred a la cual se conecta la interfaz del router.<br />Los dispositivos en una red y una subred utilizan la interfaz del router conectada a su LAN como gateway predeterminado.</p>
+<p>División Básica en Subredes</p>
+<p>Préstamo de bits del Id. de Host para crear subredes:Si se toma prestado 1 bit, 2^1 = 2 subredes.</p>
+<p><img src="imagen.16.png" width="698" height="402" alt="máscara rr" style="display: block; margin-left: auto; margin-right: auto;" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id100">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Clases</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta100_133_2" class="block iDevice_content">
+<div class="exe-text"><p><strong><span style="font-size: 14pt;"><img src="imagen.18.png" width="646" height="343" alt="clases" style="display: block; margin-left: auto; margin-right: auto;" /></span></strong></p>
+<p><strong><span style="font-size: 14pt;">Direccionamiento Classful</span></strong></p>
+<p style="text-align: justify;">El direccionamiento classful es un esquema de direccionamiento IP que fue utilizado en los primeros días de las redes informáticas. Este sistema ha sido reemplazado en su mayor parte por técnicas más modernas como el CIDR (Classless Inter-Domain Routing), pero sigue siendo fundamental para comprender cómo se gestionaban las redes inicialmente y cómo se agrupan las direcciones IP.</p>
+<p style="text-align: justify;">El direccionamiento IP es el sistema mediante el cual se asignan direcciones únicas a los dispositivos en una red. Cada dispositivo en una red que utiliza el protocolo IP (Internet Protocol) debe tener una dirección IP, que sirve para identificarlo y permitir la comunicación entre ellos.</p>
+<p style="text-align: justify;">Las direcciones IP se representan en formato decimal con puntos y están compuestas por 32 bits en el caso de IPv4. Esto se traduce en cuatro octetos (bloques de 8 bits), cada uno separado por un punto, como en: 192.168.1.1.</p>
+<p>El direccionamiento classful divide el espacio de direcciones IPv4 en clases, con un enfoque rígido que asigna porciones específicas del espacio de direcciones a diferentes "clases" de redes. Este esquema fue propuesto para hacer más fácil la asignación de direcciones según las necesidades de diferentes tamaños de redes.</p>
+<p>En este sistema, las direcciones IP se clasifican en cinco clases: A, B, C, D y E. Las tres primeras, A, B y C, son las más utilizadas para asignar direcciones a dispositivos en redes. Veamos cada una en detalle:</p>
+<p style="text-align: justify;"><span style="font-size: 14pt;"><strong>Clases de Direccionamiento Classful</strong></span><br /><strong>1. Clase A</strong> (0.0.0.0 - 127.255.255.255):<br />Rango de direcciones IP: 0.0.0.0 a 127.255.255.255.<br />Destinada a: Redes muy grandes.<br />Estructura:</p>
+<ul>
+<li style="text-align: justify;">El primer octeto (los primeros 8 bits) se usa para identificar la red.</li>
+<li style="text-align: justify;">Los otros tres octetos (24 bits) se usan para identificar los hosts dentro de esa red.</li>
+</ul>
+<p>Número máximo de redes: 128 redes posibles.<br />Número máximo de hosts por red: Aproximadamente 16 millones de hosts (2^24 - 2, se restan 2 direcciones especiales).<br />Ejemplo: 10.0.0.0 es una dirección de red de clase A comúnmente utilizada en redes privadas.</p>
+<p><strong>2. Clase B</strong> (128.0.0.0 - 191.255.255.255):<br />Rango de direcciones IP: 128.0.0.0 a 191.255.255.255.<br />Destinada a: Redes de tamaño mediano a grande.<br />Estructura:</p>
+<ul>
+<li>Los primeros dos octetos (16 bits) se usan para identificar la red.</li>
+<li>Los otros dos octetos (16 bits) se usan para identificar los hosts dentro de esa red.</li>
+</ul>
+<p>Número máximo de redes: 16,384 redes posibles.<br />Número máximo de hosts por red: Aproximadamente 65,000 hosts.<br />Ejemplo: 172.16.0.0 es una dirección de red de clase B.</p>
+<p><strong>3. Clase C</strong> (192.0.0.0 - 223.255.255.255):<br />Rango de direcciones IP: 192.0.0.0 a 223.255.255.255.<br />Destinada a: Redes pequeñas.<br />Estructura:</p>
+<ul>
+<li>Los primeros tres octetos (24 bits) se usan para identificar la red.</li>
+<li>El último octeto (8 bits) se usa para identificar los hosts dentro de esa red.</li>
+</ul>
+<p>Número máximo de redes: Aproximadamente 2 millones de redes posibles.<br />Número máximo de hosts por red: 254 hosts (2^8 - 2).<br />Ejemplo: 192.168.0.0 es una dirección de red de clase C comúnmente utilizada en redes domésticas y pequeñas.</p>
+<p><strong>4. Clase D</strong> (224.0.0.0 - 239.255.255.255):<br />Rango de direcciones IP: 224.0.0.0 a 239.255.255.255.<br />Destinada a: Direcciones multicast.<br />No se asigna a redes o hosts individuales. Estas direcciones se utilizan para enviar un mensaje a múltiples dispositivos en una red simultáneamente.<br /><strong></strong></p>
+<p><strong>5. Clase E</strong> (240.0.0.0 - 255.255.255.255):<br />Rango de direcciones IP: 240.0.0.0 a 255.255.255.255.<br />Destinada a: Uso experimental o reservado.<br />No se asigna para uso público o comercial.<br /><br /><strong>Características del Direccionamiento Classful</strong></p>
+<ul>
+<li>Fronteras fijas de red y host: En el direccionamiento classful, la porción de red y la porción de host están claramente definidas y dependen de la clase a la que pertenece la dirección IP.</li>
+<li>Desperdicio de direcciones: Un problema con el direccionamiento classful es que a veces se asignan más direcciones de las necesarias. Por ejemplo, si tienes una red pequeña pero utilizas una dirección de clase B, estarías desperdiciando muchas direcciones IP que podrían ser usadas por otros dispositivos.</li>
+<li>Sin flexibilidad: No permite dividir las redes en subredes de tamaños personalizados. Cada red tiene que ajustarse estrictamente al tamaño definido por su clase.<br /><strong></strong></li>
+</ul>
+<p><strong>Ejemplo Práctico de Desperdicio de Direcciones</strong><br />Imagina que una pequeña empresa tiene solo 50 dispositivos en su red. Si utilizan una red de Clase B, tendrían un espacio para aproximadamente 65,000 hosts. Esto es mucho más de lo que necesitan, lo que resulta en un gran desperdicio de direcciones IP.</p>
+<p>Este problema es lo que llevó al desarrollo de técnicas como CIDR (Classless Inter-Domain Routing), que permite dividir el espacio de direcciones de manera más eficiente, ajustando el tamaño de las redes según las necesidades específicas.</p>
+<p style="text-align: justify;">El direccionamiento classful fue crucial en la etapa inicial del crecimiento de Internet, pero su rigidez y el desperdicio de direcciones lo volvieron ineficiente a medida que las redes se expandieron. Hoy en día, se utilizan técnicas más flexibles como el subnetting y CIDR, pero el modelo classful sigue siendo esencial para entender cómo se organizaban originalmente las redes y por qué fue necesario evolucionar hacia esquemas más dinámicos.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id86">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Subnetting</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta86_121_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">La evolución de los esquemas de direccionamiento IP refleja cómo Internet creció desde redes simples hasta complejas, exigiendo soluciones cada vez más eficientes para gestionar el espacio de direcciones y las tablas de enrutamiento. Esta evolución se da a partir del subnetting puro, seguido por el uso de VLSM (Variable Length Subnet Masking), el Supernetting y finalmente CIDR (Classless Inter-Domain Routing), cada uno mejorando la flexibilidad y eficiencia en la asignación de direcciones IP.</p>
+<p style="text-align: justify;">El subnetting puro surgió como una extensión de este sistema de clases, permitiendo que las organizaciones dividieran su red (por ejemplo, una red de clase A, B o C) en subredes más pequeñas mediante el uso de máscaras de subred adicionales. Esto permitió a las empresas tener múltiples redes internas dentro de un solo bloque de direcciones IP.</p>
+<p><strong>Problemas con el Subnetting Puro</strong>:</p>
+<ul>
+<li>Desperdicio de direcciones IP: El sistema basado en clases fue muy inflexible. Por ejemplo, una organización que necesitaba 300 direcciones IP recibiría una red de clase B (65,536 direcciones), lo que generaba un desperdicio masivo.</li>
+<li>Tablas de enrutamiento enormes: Cada red tenía que ser anunciada de forma separada, lo que provocaba un crecimiento acelerado de las tablas de enrutamiento en Internet.</li>
+</ul>
+<p>Ejemplo: la empresa X utiliza la red40.40.0.0 / 255.255.0.0 (es decir desde 40.40.0.0 hasta 40.40.255.255) en una LAN enorme. Para reducir el tráfico broadcastdecide dividirla formando 256 VLANs, todas con menos de 256 ordenadores. Las subredes podrían ser:</p>
+<p><img src="imagen.12.png" width="507" height="279" alt="subnetting" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>Una de las conclusiones que podemos extraer del subnetting es que las máscaras no siempre son de 8, 16 o 24 bits. En estos casos la separación de la parte red y la parte host no es tan evidente, aunque el mecanismo es el mismo:</p>
+<p><img src="imagen.15.png" width="525" height="270" alt="red" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><strong>Valores permitidos en las Máscaras de Red</strong></p>
+<p><strong> <img src="imagen.14.png" width="823" height="400" alt="valores máscaras" /></strong></p>
+<p>El subnetting también es llamado FLSM (Fixed Length Subnet Masks) y en él parte del Host ID se emplea para diferenciar la subred.</p>
+<p style="text-align: center;"><strong>NetworkID+SubnetworkID = ExtendedNetworkID</strong></p>
+<p>En este caso solo existe una máscara posible en toda la red, siendo todas las subredes de igual tamaño.</p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper DebesconocerfpdIdevice em_iDevice em_iDevice_debesconocerfpd" id="id87">
+<div class="iDevice emphasis_debesconocerfpd" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Debes conocer</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta87_145" class="block iDevice_content">
+<p>La red más pequeña que podemos hacer es la de máscara de 30.</p>
+<p>El n.º de hosts que se pueden obtener a partir de una máscara es:</p>
+<p style="text-align: center;"><strong>N.º hosts=2n-2 (n: n.º de 0 a la derecha de la máscara)</strong></p>
+<p>En el caso de máscara 30 tendríamos 2 direcciones útiles. Este tipo de redes se suelen utilizar en <strong>enlaces punto a punto.</strong></p>
+<p><strong><img src="imagen.13.png" width="823" height="139" alt="red de 30" /></strong></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice" id="id103">
+<div class="iDevice emphasis0" >
+<div id="ta103_121_2" class="block iDevice_content">
+
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id104">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">VLSM</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta104_122_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;"><strong>VLSM</strong> fue una evolución natural del subnetting puro, permitiendo una mayor flexibilidad al poder definir subredes con diferentes tamaños dentro de una misma red. Se permitió a los administradores utilizar máscaras de subred de longitud variable (Variable Length Subnet Masks), lo que significaba que ya no era necesario que todas las subredes fueran del mismo tamaño.</p>
+<p style="text-align: justify;"><strong>Beneficios del VLSM:</strong></p>
+<ul style="text-align: justify;">
+<li><strong>Optimización del espacio IP:</strong> Permitió asignar direcciones más eficientemente según las necesidades específicas de cada subred.Por ejemplo, una red con 192.168.1.0/24 podría subdividirse en subredes más pequeñas: 192.168.1.0/26, 192.168.1.64/26, 192.168.1.128/27, y así sucesivamente.</li>
+<li><strong>Más subredes:</strong> Permitió dividir una red en subredes más pequeñas y con tamaños diferentes, lo que solucionó el problema de las asignaciones de direcciones innecesariamente grandes.</li>
+</ul>
+<p style="text-align: justify;">Las máscaras de subred de tamaño variable o VLSM (del inglés Variable Length Subnet Mask) representan otra de las tantas soluciones que se implementaron para evitar el agotamiento de direcciones IP en IPv4 (1987), como la división en subredes (1985), el enrutamiento sin clases CIDR (1993), NAT y las direcciones IP privadas.</p>
+<p style="text-align: justify;">Otra de las funciones de<strong> VLSM</strong> es <strong>descentralizar las redes</strong> y de esta forma conseguir redes más seguras y jerárquicas.<br />Ejemplo de desperdicio de direcciones IP: subred con 200 host → todas las subredes con 256 direcciones, aunque necesiten menos.<br />El concepto básico de VLSM es muy simple: se toma una red y se divide en subredes fijas, luego se toma una de esas subredes y se vuelve a dividir, tomando bits "prestados" de la porción de hosts, ajustándose a la cantidad de hosts requeridos por cada segmento de nuestra red.</p>
+<p style="text-align: justify;">Ejemplo:</p>
+<ol>
+<li style="text-align: justify;">Se toma la dirección de red 192.168.20.0/24 y se subdivide usando una máscara /27 se tienen 8 subredes.</li>
+<li style="text-align: justify;">Si se construye un enlace entre 2 routers y se toma para ello una de las subredes (192.168.20.224/27), con esta máscara de subred sin aplicar VLSM se desperdiciarían 28 direcciones utilizables (con 27 bits de máscara, quedaría 5 bits para hosts, 2⁵=32, restando las direcciones para red y difusión y la scorrespondientes a las interfaces de los routers quedarían 28 direcciones para hosts).</li>
+<li style="text-align: justify;">Ahora, si se aplica VLSM a una de las subredes anteriores (la 192.168.20.224/27) y se toman "prestados" 3 bits de la porción de host tendríamos otras 8 subredes /30 cada una con un total de 4 direcciones totales pero solamente dos direcciones utilizables y no se genera desperdicio. Finalmente podemos tomar cualquiera de ellas, por ejemplo la 192.168.20.224/30 y aplicar las direcciones 192.168.20.225/30 y 192.168.20.226/30 a las interfaces de los routers.</li>
+</ol>
+<p style="text-align: justify;">Los protocolos de enrutamiento que soportan VLSM deben mantener y enviar, cuando difundan la información de su tabla de enrutamiento a través de la red, la máscara de subred asociada a cada una de las direcciones IP de cada entrada o ruta de encaminamiento.</p>
+<p style="text-align: justify;">Ejemplos de protocolos de encaminamiento que admiten VLSM son RIP versión 2, OSPF, las versiones más recientes de BGP, y EIGRP.</p>
+<p style="text-align: justify;">Una alternativa para ahorrar las escasas direcciones públicas, es utilizar direcciones privadas, en combinación con traducción NAT, especialmente en las direcciones que no necesitan ser alcanzados desde fuera de la red interna.</p>
+<p style="text-align: justify;"><strong>Problemas persistentes:</strong><br />Aunque VLSM permitió usar el espacio de direcciones de manera más eficiente dentro de redes privadas, el problema de las tablas de enrutamiento crecientes en Internet persistía.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id105">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle"> Supernetting (Agregación de Rutas)</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta105_123_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">El Supernetting, a veces llamado agregación de rutas, fue un intento de abordar el problema del crecimiento de las tablas de enrutamiento. A medida que se conectaban más redes a Internet, las tablas de enrutamiento en los routers se hacían cada vez más grandes, lo que dificultaba la administración y ralentizaba el proceso de enrutamiento.</p>
+<p style="text-align: justify;">Supernetting permitió combinar varias redes más pequeñas en una sola red más grande.</p>
+<p style="text-align: justify;">Por ejemplo, en lugar de anunciar cuatro redes de clase C, como 192.168.0.0/24, 192.168.1.0/24, 192.168.2.0/24 y 192.168.3.0/24, se podían agrupar en un único anuncio: 192.168.0.0/22.</p>
+<p style="text-align: justify;">Otro ejemplo, dieciséis redes /24 contiguas pueden ser agregadas y publicadas en los enrutadores de Internet como una sola ruta /20 (si los primeros 20 bits de sus respectivas redes coinciden). Dos redes /20 contiguas pueden ser agregadas en una /19, etc.<br />Esto permite una reducción significativa en el número de rutas que los enrutadores en Internet tienen que conocer (y una reducción de memoria, recursos, etc.) y previene una explosión de tablas de encaminamiento, que podría sobrecargar a los routers e impedir la expansión de Internet en el futuro.</p>
+<p><img src="imagen.19.png" width="766" height="274" alt="super" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p style="text-align: justify;"></p>
+<p style="text-align: justify;">Para muchas organizaciones una dirección de red de clase C es poco.</p>
+<p style="text-align: justify;"><strong>Solución:</strong> Agrupar direcciones consecutivas (tienen un prefijo común) de redes de clase C para asignarlas a una organización. Esto permite asignar espacio de direcciones a organizaciones con redes de tamaño medio, evitando utilizar direcciones de clase B.</p>
+<p>Ejemplo de agrupamiento:<br />➔ 193.40.128.0: 11000001 00101000 10000000 00000000</p>
+<p>➔ 193.40.129.0: 11000001 00101000 10000001 00000000</p>
+<p>➔ … …</p>
+<p>➔ 193.40.142.0: 11000001 00101000 10001110 00000000</p>
+<p>➔ 193.40.143.0: 11000001 00101000 10001111 00000000</p>
+<ul>
+<li>La dirección de red/máscara sería 193.40.128.0/20 (255.255.240.0)</li>
+<li>Máscara en binario: 11111111 11111111 11110000 00000000.</li>
+<li>Existen 2¹²-2 (4096-2) direcciones IP para hosts.</li>
+</ul>
+<p style="text-align: justify;"><strong>Beneficios del Supernetting:</strong></p>
+<ul>
+<li style="text-align: justify;"><strong>Reducción de las tablas de enrutamiento:</strong> Al agregar redes, se reduce el número de rutas que los routers tienen que manejar.</li>
+<li style="text-align: justify;"><strong>Mejora del rendimiento:</strong> El supernetting simplificó el enrutamiento en las redes troncales de Internet.<br />Limitaciones:</li>
+<li style="text-align: justify;"><strong>Dependencia del direccionamiento por clases:</strong> El Supernetting estaba limitado por los bloques de redes predefinidos (clases) y no resolvía completamente la inflexibilidad del direccionamiento de clase en términos de la asignación de direcciones IP.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id106">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">CIDR (Classless Inter-Domain Routing)</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta106_124_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">Finalmente, en 1993, se introdujo CIDR por IETF como una solución para eliminar por completo las limitaciones del direccionamiento por clases y  representó una mejora en el modo de interpretar las direcciones IP. Con CIDR, las direcciones IP ya no están restringidas a las clases A, B o C; en su lugar, las redes se definen mediante un prefijo de longitud variable, permitiendo la asignación de bloques de direcciones según la necesidad exacta de direcciones.</p>
+<p style="text-align: justify;">En español, Enrutamiento ( Encaminamiento) entre Dominios sin Clases. (Se pronuncia como “cider” o “cedar”). Su introducción permitió una mayor flexibilidad al dividir rangos de direcciones IP en redes separadas.<br />CIDR reemplaza la sintaxis previa para nombrar direcciones IP, las clases de redes. ya que en vez de asignar bloques de direcciones en los límites de los octetos, que implicaban prefijos “naturales” de 8, 16 y 24 bits, CIDR usa la técnica VLSM para hacer posible la asignación de prefijos de longitud arbitraria.</p>
+<p><strong>Evolución con CIDR:</strong><br /><strong></strong></p>
+<ul>
+<li style="text-align: justify;"><strong>Asignación sin clases</strong>: CIDR permite asignar bloques de direcciones de cualquier tamaño. Por ejemplo, en lugar de estar restringido a una red de clase C (192.168.0.0/24), se <strong>pueden</strong> asignar bloques de tamaño personalizado como 192.168.0.0/26 (62 direcciones), o 192.168.0.0/22 (1024 direcciones), según las necesidades exactas.</li>
+<li style="text-align: justify;"><strong>Agregación de rutas</strong>: CIDR permite la agregación de rutas mucho más eficiente que Supernetting, lo que reduce drásticamente el tamaño de las tablas de enrutamiento.</li>
+</ul>
+<p>CIDR engloba:</p>
+<ul>
+<li>La técnica VLSM para especificar prefijos de red de longitud variable que permite un uso más eficiente del cada vez más escaso espacio de direcciones IPv4.</li>
+<li>La agregación de múltiples prefijos contiguos en super-redes, reduciendo el número de entradas en las tablas de ruta globales.</li>
+</ul>
+<p>CIDR es un estándar de red para la interpretación de direcciones IP.<br />CIDR facilita el encaminamiento al permitir agrupar bloques de direcciones en una sola entrada de la tabla de rutas. Estos grupos, llamados comúnmente Bloques CIDR, comparten una misma secuencia inicial de bits en la representación binaria de sus direcciones IP.</p>
+<p>Los bloques CIDR IPv4 se identifican usando una sintaxis similar a la de las direcciones IPv4: cuatro números decimales separados por puntos, seguidos de una barra de división y un número de 0 a 32; A.B.C.D/N.<br />Los primeros cuatro números decimales se interpretan como una dirección IPv4, y el número tras la barra es la longitud de prefijo, contando desde la izquierda, y representa el número de bits comunes a todas las direcciones incluidas en el bloque CIDR.</p>
+<p style="text-align: justify;">Una dirección IP está incluida en un bloque CIDR, y encaja con el prefijo CIDR, si los N bits iniciales de la dirección y el prefijo son iguales. Por tanto, para entender CIDR es necesario visualizar la dirección IP en binario.<br />Dado que la longitud de una dirección IPv4 es fija, de 32 bits, un prefijo CIDR de N-bits deja 32-N bits sin encajar, y hay 2(32-N) combinaciones posibles con los bits restantes. Esto quiere decir que 2(32-N) direcciones IPv4 encajan en un prefijo CIDR de N-bits.<br />Una dirección IP puede encajar en varios prefijos CIDR de longitudes diferentes.</p>
+<p style="text-align: justify;">CIDR también se usa con direcciones IPv6, en las que la longitud del prefijo varia desde 0 a 128, debido a la mayor longitud de bit en las direcciones, con respecto a IPv4. En el caso e IPv6 se usa una sintaxis similar a la comentada: el prefijo se escribe como una dirección IPv6, seguida de una barra y el número de bits significativos.</p>
+<p><img src="imagen.20.png" width="581" height="372" alt="cidr" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p><strong>Beneficios de CIDR:</strong></p>
+<ul>
+<li style="text-align: justify;"><strong>Optimización del espacio de direcciones:</strong> Permitió una asignación mucho más precisa de bloques de direcciones IP, aliviando el problema del agotamiento de direcciones IPv4, haciendo un uso más eficiente de las cada vez más escasas direcciones IPv4.</li>
+<li><strong>Reducción de las tablas de enrutamiento:</strong> Al permitir la agregación de rutas sin depender de clases rígidas, CIDR simplificó significativamente las tablas de enrutamiento.</li>
+<li><strong>Escalabilidad:</strong> CIDR fue fundamental para permitir el crecimiento de Internet sin la sobrecarga masiva de gestión en los routers.</li>
+<li><strong>Un mayor uso de la jerarquía de direcciones</strong> (agregación de prefijos de red), disminuyendo la sobrecarga de los enrutadores principales de Internet para realizar el encaminamiento.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id107">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Comparación de los esquemas de direccionamiento</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta107_125_2" class="block iDevice_content">
+<div class="exe-text"><table style="width: 100%;" border="1">
+<tbody>
+<tr>
+<td style="width: 33.3333%;">Esquema</td>
+<td style="width: 33.3333%;">Beneficio Principal</td>
+<td style="width: 33.3333%;">Desventajas</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">Subnetting puro</td>
+<td style="width: 33.3333%;">Introducción al concepto de subredes.</td>
+<td style="width: 33.3333%;">Desperdicio de direcciones IP y tablas de enrutamiento grandes.</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">VLSM</td>
+<td style="width: 33.3333%;">Flexibilidad para crear redes de tamaños variables.</td>
+<td style="width: 33.3333%;">No soluciona el problema de las grandes tablas de enrutamiento en Internet</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">Supernetting</td>
+<td style="width: 33.3333%;">Permite la agregación de rutas reduciendo el tamaño de las tablas de enrutamiento.</td>
+<td style="width: 33.3333%;">Limitado por el direccionamiento basado en clases.</td>
+</tr>
+<tr>
+<td style="width: 33.3333%;">CIDR</td>
+<td style="width: 33.3333%;">Flexibilidad total en la asignación de direcciones y agregación de rutas.</td>
+<td style="width: 33.3333%;">Requiere routers compatibles con CIDR para su implementación.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="621_protocolo_ip.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="6212_tabla_de_encaminamiento.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_adultos_js.js"></script></body></html>

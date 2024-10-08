@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>6.2.1.2. Tabla de encaminamiento | Tema 2 PAR </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Diana de Lara del Rey" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-36"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Tema 2 PAR</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Tema 2. Teoría de las comunicaciones. El modelo OSI. TCP/IP</a></li>
+   <li><a href="1_introduccin.html" class="no-ch">1. Introducción</a></li>
+   <li><a href="2_protocolos_de_comunicacin.html" class="daddy">2. Protocolos de Comunicación</a>
+   <ul class="other-section">
+      <li><a href="21_por_qu_importan_los_protocolos.html" class="no-ch">2.1. ¿Por Qué Importan los Protocolos?</a></li>
+      <li><a href="22_protocolos_de_red.html" class="no-ch">2.2. Protocolos de Red</a></li>
+   </ul>
+   </li>
+   <li><a href="3_funciones_de_la_comunicacin.html" class="no-ch">3. Funciones de la Comunicación</a></li>
+   <li><a href="4_arquitectura_de_comunicaciones.html" class="daddy">4. Arquitectura de Comunicaciones</a>
+   <ul class="other-section">
+      <li><a href="41_diseo_de_arquitectura_de_red.html" class="no-ch">4.1. Diseño de Arquitectura de Red</a></li>
+      <li><a href="42_caractersticas_de_las_arquitecturas_por_niveles.html" class="no-ch">4.2. Características de las Arquitecturas por Niveles</a></li>
+   </ul>
+   </li>
+   <li><a href="5_el_modelo_de_referencia_osi.html" class="daddy">5. El modelo de referencia OSI</a>
+   <ul class="other-section">
+      <li><a href="51_la_capa_fsica.html" class="no-ch">5.1. La capa física</a></li>
+      <li><a href="52_la_capa_de_enlace_de_datos.html" class="no-ch">5.2. La capa de enlace de Datos</a></li>
+      <li><a href="53_la_capa_de_red.html" class="no-ch">5.3. La capa de red</a></li>
+      <li><a href="54_la_capa_de_transporte.html" class="no-ch">5.4. La capa de transporte</a></li>
+      <li><a href="55_la_capa_de_sesin.html" class="no-ch">5.5. La capa de sesión</a></li>
+      <li><a href="56_la_capa_de_presentacin.html" class="no-ch">5.6. La capa de presentación</a></li>
+      <li><a href="57_la_capa_de_aplicacin.html" class="no-ch">5.7. La capa de aplicación</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="6_el_modelo_tcpip.html" class="current-page-parent daddy">6. El Modelo TCP/IP</a>
+   <ul>
+      <li><a href="61_la_capa_de_acceso_a_red.html" class="daddy">6.1. La capa de acceso a red</a>
+      <ul class="other-section">
+         <li><a href="611_formato_de_tramas.html" class="no-ch">6.1.1. Formato de tramas</a></li>
+         <li><a href="612_direccin_mac.html" class="no-ch">6.1.2. Dirección MAC</a></li>
+      </ul>
+      </li>
+      <li class="current-page-parent"><a href="62_la_capa_de_red_o_internet.html" class="current-page-parent daddy">6.2. La capa de red o Internet</a>
+      <ul>
+         <li class="current-page-parent"><a href="621_protocolo_ip.html" class="current-page-parent daddy">6.2.1. Protocolo IP</a>
+         <ul>
+            <li><a href="6211_subredes.html" class="no-ch">6.2.1.1. Subredes</a></li>
+            <li id="active"><a href="6212_tabla_de_encaminamiento.html" class="active no-ch">6.2.1.2. Tabla de encaminamiento</a></li>
+         </ul>
+         </li>
+         <li><a href="622_protocolo_arp.html" class="no-ch">6.2.2. Protocolo ARP</a></li>
+         <li><a href="623_protocolo_icmp.html" class="no-ch">6.2.3. Protocolo ICMP</a></li>
+      </ul>
+      </li>
+      <li><a href="63_la_capa_de_transporte.html" class="daddy">6.3. La capa de transporte</a>
+      <ul class="other-section">
+         <li><a href="631_protocolo_tcp.html" class="daddy">6.3.1. Protocolo TCP</a>
+         <ul class="other-section">
+            <li><a href="6311_formato_de_cabecera.html" class="no-ch">6.3.1.1. Formato de cabecera</a></li>
+            <li><a href="6312_puerto_lgico.html" class="no-ch">6.3.1.2. Puerto lógico</a></li>
+         </ul>
+         </li>
+         <li><a href="632_protocolo_udp.html" class="daddy">6.3.2. Protocolo UDP</a>
+         <ul class="other-section">
+            <li><a href="6321_formato_de_cabecera.html" class="no-ch">6.3.2.1. Formato de cabecera</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+      <li><a href="64_la_capa_de_aplicacin.html" class="no-ch">6.4. La capa de aplicación</a></li>
+   </ul>
+   </li>
+   <li><a href="7_comparacin_entre_el_modelo_osi_y_el_modelo_tcpip.html" class="no-ch">7. Comparación entre el Modelo OSI y el Modelo TCP/IP</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="6211_subredes.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="622_protocolo_arp.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">6.2.1.2. Tabla de encaminamiento</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id109">
+<div class="iDevice emphasis0" >
+<div id="ta109_127_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">Imaginemos que tenemos una red de ordenadores interconectados entre sí. Cuando un ordenador quiere enviar datos a otro, esos datos deben viajar a través de una serie de dispositivos de red, como routers, que se encargan de guiar la información hasta su destino. Este proceso de guiar los datos por la red se llama encaminamiento.</p>
+<p style="text-align: justify;">El encaminamiento y las tablas de encaminamiento son conceptos fundamentales en redes informáticas, ya que son los mecanismos que permiten que los datos (paquetes) viajen de un dispositivo a otro a través de múltiples redes interconectadas, como ocurre en Internet. </p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id110">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">¿Qué es el encaminamiento?</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta110_128_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">El <strong>encaminamiento</strong> es el proceso por el cual los dispositivos de red (principalmente routers o enrutadores) determinan la <strong>mejor ruta</strong> o camino por el que debe viajar un paquete de datos para llegar desde su origen hasta su destino, a través de una red o una serie de redes. En otras palabras, cuando envías información desde tu computadora a un servidor, los routers en el camino deben decidir cómo hacer que el paquete llegue de manera eficiente al destino correcto. Cada vez que un paquete llega a un router, este debe decidir a cuál de sus salidas (interfaces) enviarlo, basándose en la dirección IP de destino del paquete. Esto es esencial para garantizar que los datos viajen eficientemente desde el origen hasta el destino, incluso si están en redes diferentes o muy distantes.</p>
+<p><img src="imagen.23.png" width="627" height="243" alt="encaminar" style="display: block; margin-left: auto; margin-right: auto;" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id131">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">¿Cómo funciona el encaminamiento?</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta131_149_2" class="block iDevice_content">
+<div class="exe-text"><ol>
+<li style="text-align: justify;">Los routers son dispositivos encargados de tomar decisiones sobre el camino que debe seguir un paquete.</li>
+<li>Cada router tiene una tabla de encaminamiento, que es como un "mapa" donde el router guarda la información sobre las posibles rutas o caminos hacia diferentes redes.</li>
+<li>Cuando un router recibe un paquete de datos, mira en su tabla de encaminamiento para ver cuál es la mejor ruta que debe seguir ese paquete para llegar a su destino.</li>
+<li>Los paquetes se reenvían de un router a otro, hasta que alcanzan la red destino.</li>
+</ol>
+<p>Elementos necesarios para el enrutamiento.</p>
+<ol>
+<li><strong>Direcciones IP</strong>: Cada dispositivo en una red tiene una dirección IP única. Cuando un dispositivo envía datos a otro, el paquete contiene la dirección IP del destinatario.</li>
+<li><strong>Decisiones de encaminamiento</strong>: Los routers en la red revisan la dirección IP de destino y deciden por cuál de sus "caminos" deben enviar el paquete para acercarlo a su destino final.</li>
+<li><strong>Algoritmos de encaminamiento</strong>: Los routers utilizan algoritmos para decidir la mejor ruta posible. Algunos factores que pueden influir en esta decisión incluyen:
+<ul>
+<li>La distancia a la red de destino.</li>
+<li>La cantidad de tráfico en una ruta.</li>
+<li>La confiabilidad de los enlaces.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Tipos de encaminamiento</strong></p>
+<ul>
+<li><strong>Encaminamiento directo: </strong>Ocurre cuando el dispositivo origen y el dispositivo destino están en la misma red local. En este caso, no es necesario pasar por un router. El dispositivo puede enviar el paquete directamente al destinatario.</li>
+<li><strong>Encaminamiento indirecto: </strong>Ocurre cuando el dispositivo origen y el destino están en redes diferentes. Aquí, el paquete necesita pasar por uno o más routers intermedios para llegar a la red destino.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id111">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Tablas de encaminamiento</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta111_129_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">Una tabla de encaminamiento es como un mapa o un directorio que el router utiliza para tomar decisiones. La tabla de encaminamiento es una base de datos que utiliza un router para decidir por dónde enviar un paquete de datos. En términos simples, es una lista que indica qué redes están disponibles y cómo llegar a ellas. Cada fila en la tabla de encaminamiento se conoce como una entrada o ruta, y contiene información clave que ayuda a tomar las decisiones de encaminamiento. En esta tabla, el router guarda información sobre:</p>
+<ul>
+<li>Redes conocidas: Qué redes conoce y cómo llegar a ellas.</li>
+<li>Rutas: Por qué camino (o interfaz) debe enviar los datos para llegar a una red específica.</li>
+<li>Distancia: Cuál es la distancia o "costo" para llegar a esa red. A veces, esto se refiere al número de "saltos" entre routers que se requieren para llegar al destino.</li>
+</ul>
+<p>Siendo más específicos, cada entrada en una tabla de enrutamiento tiene al menos los siguientes campos:</p>
+<ul>
+<li><strong>Destino de la red</strong>: Indica el rango de direcciones IP que corresponden a una red específica a la que el router puede enviar datos. Por ejemplo, la red 192.168.1.0/24 incluye todas las direcciones IP desde 192.168.1.1 hasta 192.168.1.254.</li>
+<li><strong>Máscara de subred:</strong> Define qué parte de la dirección IP se refiere a la red y qué parte se refiere a los hosts dentro de esa red. En el ejemplo anterior, la máscara de subred 255.255.255.0 indica que los primeros 24 bits (192.168.1) son la parte de red y el último byte es para los hosts.</li>
+<li><strong>Puerta de enlace (gateway)</strong>: Es la dirección IP del siguiente dispositivo (normalmente otro router) al que el paquete debe ser enviado para continuar su camino hacia la red de destino. Si el destino está en la red local, no se necesita un gateway.</li>
+<li><strong>Interfaz de salida</strong>: Indica por qué puerto físico o interfaz de red (como Ethernet o Wi-Fi) debe enviarse el paquete para llegar al siguiente salto en su camino.</li>
+<li><strong>Métrica</strong>: Un valor que indica el costo de usar una determinada ruta. Puede basarse en diferentes factores, como la cantidad de routers intermedios, el ancho de banda o el tiempo de respuesta. Las rutas con métricas más bajas son preferidas porque se consideran más eficientes.</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id132">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Ejemplo práctico de tabla de encaminamiento</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta132_150_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">Imagina que tienes una red doméstica con un router que conecta varios dispositivos a Internet. A continuación, se muestra un ejemplo simplificado de una tabla de encaminamiento en el router de tu red:</p>
+<table style="width: 100%; height: 92px;" border="1">
+<tbody>
+<tr style="height: 23px;">
+<td style="width: 20%; height: 23px;">Destino</td>
+<td style="width: 20%; height: 23px;">Máscara</td>
+<td style="width: 20%; height: 23px;">Puerta de enlace</td>
+<td style="width: 20%; height: 23px;">Interfaz de Salida</td>
+<td style="width: 20%; height: 23px;">Métrica</td>
+</tr>
+<tr style="height: 23px;">
+<td style="width: 20%; height: 23px;">192.168.1.0</td>
+<td style="width: 20%; height: 23px;">255.255.255.0</td>
+<td style="width: 20%; height: 23px; text-align: center;">----</td>
+<td style="width: 20%; height: 23px;">eth0</td>
+<td style="width: 20%; height: 23px;">1</td>
+</tr>
+<tr style="height: 23px;">
+<td style="width: 20%; height: 23px;">10.0.0.0</td>
+<td style="width: 20%; height: 23px;">255.0.0.0</td>
+<td style="width: 20%; height: 23px;">192.168.1.1</td>
+<td style="width: 20%; height: 23px;">eth0</td>
+<td style="width: 20%; height: 23px;">2</td>
+</tr>
+<tr style="height: 23px;">
+<td style="width: 20%; height: 23px;">0.0.0.0</td>
+<td style="width: 20%; height: 23px;">0.0.0.0</td>
+<td style="width: 20%; height: 23px;">1+92.168.1.1</td>
+<td style="width: 20%; height: 23px;">eth0</td>
+<td style="width: 20%; height: 23px;">10</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;"><strong>Explicación de cada entrada:</strong></p>
+<ul style="text-align: justify;">
+<li><strong>192.168.1.0 / 255.255.255.0:</strong> Esta es la red local. No necesita una puerta de enlace (gateway) porque el router puede comunicarse directamente con los dispositivos en esta red. La interfaz de salida es eth0, que es el puerto Ethernet del router, y tiene una métrica de 1 (es la ruta más rápida y directa para paquetes destinados a esa red).</li>
+<li><strong>10.0.0.0 / 255.0.0.0:</strong> Si se quiere enviar un paquete a una dirección IP en la red 10.0.0.0 (otra red), el paquete debe ser enviado a través de la puerta de enlace 192.168.1.1 (un router intermedio) usando la interfaz eth0. La métrica es 2, lo que significa que esta ruta es más "costosa" en comparación con la red local, pero sigue siendo viable.</li>
+<li><strong>0.0.0.0 / 0.0.0.0:</strong> Esta es una ruta por defecto. Si el router no sabe cómo llegar a una red específica, enviará el paquete a la puerta de enlace 192.168.1.1 (generalmente la conexión con el proveedor de servicios de Internet). La métrica de 10 indica que esta es una opción menos preferida comparada con las redes locales o cercanas.</li>
+</ul>
+<p style="text-align: justify;"><strong>¿Cómo decide un router qué ruta usar?</strong><br />Cuando un router recibe un paquete de datos, sigue estos pasos:</p>
+<ol style="text-align: justify;">
+<li>Examina la dirección IP de destino del paquete.</li>
+<li>Busca en la tabla de encaminamiento para ver si hay una ruta específica que coincida con esa dirección IP.</li>
+<li>Si encuentra una coincidencia exacta, sigue esa ruta. Si no hay coincidencia exacta, verifica si hay una ruta por defecto (normalmente indicada como 0.0.0.0).</li>
+<li>Si encuentra la mejor ruta, envía el paquete a través de la interfaz especificada hacia la puerta de enlace correcta.</li>
+</ol>
+<p style="text-align: justify;"><strong>Ejemplo de cómo funciona el encaminamiento:</strong><br />Supongamos que un dispositivo con la dirección IP 192.168.1.100 en tu red doméstica quiere acceder a una página web en un servidor con la dirección 10.0.0.200.</p>
+<ol>
+<li style="text-align: justify;">El dispositivo envía el paquete a su router, ya que el destino está fuera de su red local.</li>
+<li style="text-align: justify;">El router examina su tabla de encaminamiento y encuentra la entrada que corresponde a la red 10.0.0.0/8.</li>
+<li style="text-align: justify;">El router envía el paquete al siguiente router en la ruta (puerta de enlace 192.168.1.1).</li>
+<li style="text-align: justify;">El paquete continúa a través de routers intermedios hasta que llega al servidor con dirección 10.0.0.200.</li>
+</ol></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="6211_subredes.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="622_protocolo_arp.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_adultos_js.js"></script></body></html>

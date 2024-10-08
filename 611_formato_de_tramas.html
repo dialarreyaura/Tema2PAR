@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>6.1.1. Formato de tramas | Tema 2 PAR </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Diana de Lara del Rey" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.8.1 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-26"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Tema 2 PAR</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Tema 2. Teoría de las comunicaciones. El modelo OSI. TCP/IP</a></li>
+   <li><a href="1_introduccin.html" class="no-ch">1. Introducción</a></li>
+   <li><a href="2_protocolos_de_comunicacin.html" class="daddy">2. Protocolos de Comunicación</a>
+   <ul class="other-section">
+      <li><a href="21_por_qu_importan_los_protocolos.html" class="no-ch">2.1. ¿Por Qué Importan los Protocolos?</a></li>
+      <li><a href="22_protocolos_de_red.html" class="no-ch">2.2. Protocolos de Red</a></li>
+   </ul>
+   </li>
+   <li><a href="3_funciones_de_la_comunicacin.html" class="no-ch">3. Funciones de la Comunicación</a></li>
+   <li><a href="4_arquitectura_de_comunicaciones.html" class="daddy">4. Arquitectura de Comunicaciones</a>
+   <ul class="other-section">
+      <li><a href="41_diseo_de_arquitectura_de_red.html" class="no-ch">4.1. Diseño de Arquitectura de Red</a></li>
+      <li><a href="42_caractersticas_de_las_arquitecturas_por_niveles.html" class="no-ch">4.2. Características de las Arquitecturas por Niveles</a></li>
+   </ul>
+   </li>
+   <li><a href="5_el_modelo_de_referencia_osi.html" class="daddy">5. El modelo de referencia OSI</a>
+   <ul class="other-section">
+      <li><a href="51_la_capa_fsica.html" class="no-ch">5.1. La capa física</a></li>
+      <li><a href="52_la_capa_de_enlace_de_datos.html" class="no-ch">5.2. La capa de enlace de Datos</a></li>
+      <li><a href="53_la_capa_de_red.html" class="no-ch">5.3. La capa de red</a></li>
+      <li><a href="54_la_capa_de_transporte.html" class="no-ch">5.4. La capa de transporte</a></li>
+      <li><a href="55_la_capa_de_sesin.html" class="no-ch">5.5. La capa de sesión</a></li>
+      <li><a href="56_la_capa_de_presentacin.html" class="no-ch">5.6. La capa de presentación</a></li>
+      <li><a href="57_la_capa_de_aplicacin.html" class="no-ch">5.7. La capa de aplicación</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="6_el_modelo_tcpip.html" class="current-page-parent daddy">6. El Modelo TCP/IP</a>
+   <ul>
+      <li class="current-page-parent"><a href="61_la_capa_de_acceso_a_red.html" class="current-page-parent daddy">6.1. La capa de acceso a red</a>
+      <ul>
+         <li id="active"><a href="611_formato_de_tramas.html" class="active no-ch">6.1.1. Formato de tramas</a></li>
+         <li><a href="612_direccin_mac.html" class="no-ch">6.1.2. Dirección MAC</a></li>
+      </ul>
+      </li>
+      <li><a href="62_la_capa_de_red_o_internet.html" class="daddy">6.2. La capa de red o Internet</a>
+      <ul class="other-section">
+         <li><a href="621_protocolo_ip.html" class="daddy">6.2.1. Protocolo IP</a>
+         <ul class="other-section">
+            <li><a href="6211_subredes.html" class="no-ch">6.2.1.1. Subredes</a></li>
+            <li><a href="6212_tabla_de_encaminamiento.html" class="no-ch">6.2.1.2. Tabla de encaminamiento</a></li>
+         </ul>
+         </li>
+         <li><a href="622_protocolo_arp.html" class="no-ch">6.2.2. Protocolo ARP</a></li>
+         <li><a href="623_protocolo_icmp.html" class="no-ch">6.2.3. Protocolo ICMP</a></li>
+      </ul>
+      </li>
+      <li><a href="63_la_capa_de_transporte.html" class="daddy">6.3. La capa de transporte</a>
+      <ul class="other-section">
+         <li><a href="631_protocolo_tcp.html" class="daddy">6.3.1. Protocolo TCP</a>
+         <ul class="other-section">
+            <li><a href="6311_formato_de_cabecera.html" class="no-ch">6.3.1.1. Formato de cabecera</a></li>
+            <li><a href="6312_puerto_lgico.html" class="no-ch">6.3.1.2. Puerto lógico</a></li>
+         </ul>
+         </li>
+         <li><a href="632_protocolo_udp.html" class="daddy">6.3.2. Protocolo UDP</a>
+         <ul class="other-section">
+            <li><a href="6321_formato_de_cabecera.html" class="no-ch">6.3.2.1. Formato de cabecera</a></li>
+         </ul>
+         </li>
+      </ul>
+      </li>
+      <li><a href="64_la_capa_de_aplicacin.html" class="no-ch">6.4. La capa de aplicación</a></li>
+   </ul>
+   </li>
+   <li><a href="7_comparacin_entre_el_modelo_osi_y_el_modelo_tcpip.html" class="no-ch">7. Comparación entre el Modelo OSI y el Modelo TCP/IP</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="61_la_capa_de_acceso_a_red.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="612_direccin_mac.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">6.1.1. Formato de tramas</h1></header>
+<article class="iDevice_wrapper textIdevice" id="id71">
+<div class="iDevice emphasis0" >
+<div id="ta71_123_2" class="block iDevice_content">
+<div class="exe-text"><p>El protocolo de enlace de datos es responsable de las comunicaciones de NIC a NIC dentro de la misma red. En la capa de enlace, los datos se organizan en tramas. El formato de las tramas varía según la tecnología de red utilizada, pero todas las tramas siguen un esquema básico de estructura:</p>
+<ul>
+<li><strong>Cabecera (Header):</strong> Incluye la dirección física (dirección MAC) de origen y destino, un tipo de protocolo que indica qué protocolo de capa superior está siendo encapsulado (por ejemplo, IP), y otros campos específicos de la tecnología de red.</li>
+<li><strong>Datos (Payload):</strong> Es la carga útil, que contiene los datos encapsulados desde la capa de red. Este campo tiene un tamaño máximo que depende de la tecnología de red, como la unidad máxima de transmisión (MTU). Por ejemplo, en Ethernet, el tamaño máximo de una trama es de 1518 bytes, con un MTU de 1500 bytes para los datos.</li>
+<li><strong>Tráiler (Trailer):</strong> Generalmente contiene el campo FCS (Frame Check Sequence), que utiliza un algoritmo de verificación de redundancia cíclica (CRC) para detectar errores en la transmisión de datos. Si se detecta un error, la trama puede ser descartada o retransmitida.</li>
+</ul>
+<p>A diferencia de otros protocolos de encapsulación, la capa de enlace de datos agrega información en forma de un trailer al final de la trama.</p>
+<p>Todos los protocolos de capa de enlace de datos encapsulan los datos dentro del campo de datos de la trama. Sin embargo, la estructura de la trama y los campos contenidos en el encabezado y el avance varían según el protocolo.</p>
+<p>No existe una estructura de trama única que satisfaga las necesidades de todo el transporte de datos en todos los tipos de medios. Dependiendo del entorno, la cantidad de información de control necesaria en la trama varía para coincidir con los requisitos de control de acceso de los medios y la topología lógica. Por ejemplo, una trama WLAN debe incluir procedimientos para evitar colisiones y, por lo tanto, requiere información de control adicional en comparación con una trama Ethernet.</p>
+<p>Como se muestra en la imagen, en un entorno frágil, se necesitan más controles para garantizar la entrega. Los campos de encabezado y trailer son más grandes a medida que se necesita más información de control.</p>
+<p><img src="imagen.5.png" width="460" height="307" alt="trama frágil" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>Se necesita un mayor esfuerzo para garantizar la entrega. Esto significa mayores gastos generales y velocidades de transmisión más lentas.</p></div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id72">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Campos de trama</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta72_124_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;"><br />El Framing (trama) divide la secuencia en agrupaciones descifrables, con información de control insertada en el encabezado y el trailer como valores en diferentes campos. Este formato proporciona a las señales físicas una estructura reconocida por los nodos y decodificada en paquetes en el destino.</p>
+<p style="text-align: justify;">Los campos de la trama genérico se muestran en la imagen. No todos los protocolos incluyen todos estos campos. Los estándares para un protocolo de enlace de datos específico definen el formato de trama real.</p>
+<p><img src="imagen.6.png" width="462" height="282" alt="campos de trama" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>Los campos de trama incluyen lo siguiente:</p>
+<ul>
+<li style="text-align: justify;"><strong>Indicadores de inicio y finalización de trama</strong> (Start/Stop): se utilizan para identificar los límites inicial y final de la trama.</li>
+<li style="text-align: justify;"><strong>Direccionamiento</strong> (Addressing): indica los nodos de origen y destino en los medios.</li>
+<li><strong>Tipo</strong> (Type): identifica el protocolo de capa 3 en el campo de datos.</li>
+<li style="text-align: justify;"><strong>Control</strong>: identifica servicios especiales de control de flujo, como la calidad de servicio (QoS). QoS otorga prioridad de reenvío a ciertos tipos de mensajes. Por ejemplo, las tramas de voz sobre IP (VoIP) normalmente reciben prioridad porque son sensibles al retraso.</li>
+<li style="text-align: justify;"><strong>Datos</strong> (Data): contiene la carga útil de la trama (es decir, el encabezado del paquete, el encabezado del segmento y los datos).</li>
+<li style="text-align: justify;"><strong>Detección de errores</strong> (Error Detection): se incluye después de los datos para formar el avance.</li>
+</ul>
+<p>Los protocolos de capa de enlace de datos agregan un avance al final de cada trama. En un proceso llamado detección de errores, el avance determina si la trama llegó sin error. Coloca un resumen lógico o matemático de los bits que componen la trama en el avance. La capa de enlace de datos agrega detección de errores porque las señales en los medios podrían estar sujetas a interferencia, distorsión o pérdida que cambiaría sustancialmente los valores de bits que representan esas señales.</p>
+<p style="text-align: justify;">Un nodo de transmisión crea un resumen lógico del contenido de la trama, conocido como el valor de verificación de redundancia cíclica <strong>(CRC)</strong>. Este valor se coloca en el campo de secuencia de verificación de cuadros <strong>(FCS)</strong> para representar el contenido de la trama. En el avance de Ethernet, el FCS proporciona un método para que el nodo receptor determine si la trama experimentó errores de transmisión.</p>
+<p> </p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="61_la_capa_de_acceso_a_red.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="612_direccin_mac.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_adultos_js.js"></script></body></html>
